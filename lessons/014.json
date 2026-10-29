@@ -1,0 +1,112 @@
+{
+ "n": 14,
+ "title": "Small talk and a story",
+ "line": "C",
+ "why": "Two weeks done. Today: how are you, and a short scene that uses everything so far.",
+ "bridge": {
+  "title": "Formal vs friendly",
+  "rows": [
+   {
+    "cz": "Jak se máte?",
+    "tr": "Nasılsınız?",
+    "ex": "🎩",
+    "note": "formal: shop, doctor, older people"
+   },
+   {
+    "cz": "Jak se máš?",
+    "tr": "Nasılsın?",
+    "ex": "🙂",
+    "note": "friends, colleagues, kids"
+   },
+   {
+    "cz": "Mějte se",
+    "tr": "Kendinize iyi bakın",
+    "ex": "👋",
+    "note": "take care (goodbye)"
+   }
+  ],
+  "note": "Czech has a vy / ty split exactly like Turkish siz / sen."
+ },
+ "words": [
+  {
+   "cz": "Jak se máte?",
+   "en": "How are you? (polite)",
+   "tr": "Nasılsınız?",
+   "emoji": "🎩"
+  },
+  {
+   "cz": "Jak se máš?",
+   "en": "How are you? (friendly)",
+   "tr": "Nasılsın?",
+   "emoji": "🙂"
+  },
+  {
+   "cz": "Dobře",
+   "en": "Fine / good",
+   "tr": "İyi",
+   "emoji": "👍",
+   "say": "DOB-rzhe"
+  },
+  {
+   "cz": "A vy?",
+   "en": "And you?",
+   "tr": "Ya siz?",
+   "emoji": "↩️"
+  },
+  {
+   "cz": "Hezký den",
+   "en": "Have a nice day",
+   "tr": "İyi günler",
+   "emoji": "🌞",
+   "say": "HEZ-kee den"
+  },
+  {
+   "cz": "Mějte se",
+   "en": "Take care",
+   "tr": "Kendinize iyi bakın",
+   "emoji": "👋",
+   "say": "MYEY-te se"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Sousedka",
+   "cz": "Dobrý den! Jak se máte?",
+   "en": "Hello! How are you?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Dobře, děkuji. A vy?",
+   "en": "Fine, thanks. And you?"
+  },
+  {
+   "who": "Sousedka",
+   "cz": "Taky dobře. Kam jdete?",
+   "en": "Fine too. Where are you going?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Do lékárny. Bolí mě hlava.",
+   "en": "To the pharmacy. I have a headache."
+  },
+  {
+   "who": "Sousedka",
+   "cz": "Ach jo. Lékárna je tam vpravo.",
+   "en": "Oh dear. The pharmacy is there on the right."
+  },
+  {
+   "who": "Ty",
+   "cz": "Děkuji. Hezký den!",
+   "en": "Thanks. Have a nice day!"
+  },
+  {
+   "who": "Sousedka",
+   "cz": "Mějte se!",
+   "en": "Take care!"
+  }
+ ],
+ "pattern": {
+  "cz": "Dobře, děkuji. A vy?",
+  "en": "The reply to every 'Jak se máte?'."
+ }
+}

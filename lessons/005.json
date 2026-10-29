@@ -1,0 +1,121 @@
+{
+ "n": 5,
+ "title": "Paying at the till",
+ "line": "A",
+ "why": "The Albert / Lidl / Billa checkout is the same five lines every time. Learn them once.",
+ "bridge": {
+  "title": "What the cashier will ask you",
+  "rows": [
+   {
+    "cz": "Sbíráte body?",
+    "tr": "—",
+    "ex": "Ne.",
+    "note": "Do you collect points? (answer: Ne)"
+   },
+   {
+    "cz": "Tašku?",
+    "tr": "—",
+    "ex": "Ne, děkuji.",
+    "note": "A bag?"
+   },
+   {
+    "cz": "Účtenku?",
+    "tr": "—",
+    "ex": "Ne.",
+    "note": "The receipt?"
+   }
+  ],
+  "note": "These come fast. You only need to recognise them and answer Ne or Ano."
+ },
+ "words": [
+  {
+   "cz": "Kolik to stojí?",
+   "en": "How much is it?",
+   "tr": "Ne kadar?",
+   "emoji": "💰",
+   "say": "KO-lik to STO-yee"
+  },
+  {
+   "cz": "korun",
+   "en": "crowns (Kč)",
+   "tr": "kron",
+   "emoji": "🪙"
+  },
+  {
+   "cz": "taška",
+   "en": "bag",
+   "tr": "poşet",
+   "emoji": "🛍️"
+  },
+  {
+   "cz": "účtenka",
+   "en": "receipt",
+   "tr": "fiş",
+   "emoji": "🧾"
+  },
+  {
+   "cz": "hotově",
+   "en": "in cash",
+   "tr": "nakit",
+   "emoji": "💵"
+  },
+  {
+   "cz": "To je všechno",
+   "en": "That's all",
+   "tr": "Hepsi bu",
+   "emoji": "👌"
+  },
+  {
+   "cz": "sto",
+   "en": "one hundred",
+   "tr": "yüz",
+   "emoji": "💯"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Pokladní",
+   "cz": "Dobrý den. Sbíráte body?",
+   "en": "Hello. Do you collect points?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ne.",
+   "en": "No."
+  },
+  {
+   "who": "Pokladní",
+   "cz": "Tašku?",
+   "en": "A bag?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ne, děkuji.",
+   "en": "No, thanks."
+  },
+  {
+   "who": "Pokladní",
+   "cz": "Sto korun.",
+   "en": "100 crowns."
+  },
+  {
+   "who": "Ty",
+   "cz": "Kartou, prosím.",
+   "en": "By card, please."
+  },
+  {
+   "who": "Pokladní",
+   "cz": "Účtenku?",
+   "en": "Receipt?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ne, děkuji. Na shledanou.",
+   "en": "No thanks. Goodbye."
+  }
+ ],
+ "pattern": {
+  "cz": "Kolik to stojí?",
+  "en": "Point at anything and ask."
+ }
+}

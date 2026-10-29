@@ -1,0 +1,97 @@
+{
+ "n": 11,
+ "title": "Tram, bus and metro",
+ "line": "C",
+ "why": "Turkish gives you the transport words for free. Then learn the one question you hear in a full tram.",
+ "bridge": {
+  "title": "Read Czech with Turkish rules",
+  "rows": [
+   {
+    "cz": "tramvaj",
+    "tr": "tramvay",
+    "ex": "🚋",
+    "note": "j = y, so it's the same word"
+   },
+   {
+    "cz": "autobus",
+    "tr": "otobüs",
+    "ex": "🚌",
+    "note": "au = 'aw'"
+   },
+   {
+    "cz": "šofér",
+    "tr": "şoför",
+    "ex": "🚖",
+    "note": "driver"
+   }
+  ],
+  "note": "In a crowded tram someone behind you will say 'Vystupujete?' (Are you getting off?). Answer Ano, or step aside."
+ },
+ "words": [
+  {
+   "cz": "tramvaj",
+   "en": "tram",
+   "tr": "tramvay",
+   "emoji": "🚋",
+   "say": "TRAM-vay"
+  },
+  {
+   "cz": "autobus",
+   "en": "bus",
+   "tr": "otobüs",
+   "emoji": "🚌"
+  },
+  {
+   "cz": "jízdenka",
+   "en": "ticket",
+   "tr": "bilet",
+   "emoji": "🎫",
+   "say": "YEEZ-den-ka"
+  },
+  {
+   "cz": "zastávka",
+   "en": "stop",
+   "tr": "durak",
+   "emoji": "🚏"
+  },
+  {
+   "cz": "Příští zastávka",
+   "en": "Next stop",
+   "tr": "Sonraki durak",
+   "emoji": "🔊",
+   "say": "PRZHEESH-tyee"
+  },
+  {
+   "cz": "Vystupujete?",
+   "en": "Are you getting off?",
+   "tr": "İniyor musunuz?",
+   "emoji": "🚪"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Hlášení",
+   "cz": "Příští zastávka: Anděl.",
+   "en": "Next stop: Anděl."
+  },
+  {
+   "who": "Paní",
+   "cz": "Vystupujete?",
+   "en": "Are you getting off?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ne. Promiňte.",
+   "en": "No. Sorry."
+  },
+  {
+   "who": "Ty",
+   "cz": "(uhneš stranou)",
+   "en": "(you step aside)"
+  }
+ ],
+ "pattern": {
+  "cz": "Jednu jízdenku, prosím.",
+  "en": "One ticket, please. (jízdenka → jízdenku, like voda → vodu)"
+ }
+}

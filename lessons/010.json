@@ -1,0 +1,98 @@
+{
+ "n": 10,
+ "title": "Where is it?",
+ "line": "B",
+ "why": "Ask the way, find a toilet, understand the arm-waving answer.",
+ "bridge": {
+  "title": "Arrows",
+  "rows": [
+   {
+    "cz": "vlevo",
+    "tr": "sola",
+    "ex": "⬅️",
+    "note": "left"
+   },
+   {
+    "cz": "vpravo",
+    "tr": "sağa",
+    "ex": "➡️",
+    "note": "right"
+   },
+   {
+    "cz": "rovně",
+    "tr": "düz",
+    "ex": "⬆️",
+    "note": "straight on"
+   }
+  ],
+  "note": "Watch the hand, catch one of these three words, and you have the answer."
+ },
+ "words": [
+  {
+   "cz": "Kde je …?",
+   "en": "Where is …?",
+   "tr": "… nerede?",
+   "emoji": "📍",
+   "say": "gde ye"
+  },
+  {
+   "cz": "vlevo",
+   "en": "left",
+   "tr": "sol",
+   "emoji": "⬅️"
+  },
+  {
+   "cz": "vpravo",
+   "en": "right",
+   "tr": "sağ",
+   "emoji": "➡️"
+  },
+  {
+   "cz": "rovně",
+   "en": "straight on",
+   "tr": "düz",
+   "emoji": "⬆️",
+   "say": "ROV-nye"
+  },
+  {
+   "cz": "tady",
+   "en": "here",
+   "tr": "burada",
+   "emoji": "👇"
+  },
+  {
+   "cz": "tam",
+   "en": "there",
+   "tr": "orada",
+   "emoji": "👉"
+  },
+  {
+   "cz": "záchod",
+   "en": "toilet",
+   "tr": "tuvalet",
+   "emoji": "🚻",
+   "say": "ZAA-hot"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "Promiňte, kde je záchod?",
+   "en": "Excuse me, where is the toilet?"
+  },
+  {
+   "who": "Číšník",
+   "cz": "Tam vlevo.",
+   "en": "Over there on the left."
+  },
+  {
+   "who": "Ty",
+   "cz": "Děkuji.",
+   "en": "Thanks."
+  }
+ ],
+ "pattern": {
+  "cz": "Kde je ___?",
+  "en": "Where is ___? záchod, metro, lékárna."
+ }
+}

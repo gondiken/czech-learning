@@ -1,0 +1,103 @@
+{
+ "n": 8,
+ "title": "Family",
+ "line": "B",
+ "why": "Words for the people at home, and the soft ď and ť that Turkish already has.",
+ "bridge": {
+  "title": "Soft d and t = Turkish soft g and k",
+  "rows": [
+   {
+    "cz": "ď / dě",
+    "tr": "g in 'gece'",
+    "ex": "děti",
+    "note": "'gyeti' — children"
+   },
+   {
+    "cz": "ť / tě",
+    "tr": "k in 'kedi'",
+    "ex": "teta",
+    "note": "aunt"
+   },
+   {
+    "cz": "ň / ně",
+    "tr": "ny",
+    "ex": "máma",
+    "note": "'nye'"
+   }
+  ],
+  "note": "Turkish k and g are already soft before e and i. Czech ď and ť are that same sound, just written down."
+ },
+ "words": [
+  {
+   "cz": "rodina",
+   "en": "family",
+   "tr": "aile",
+   "emoji": "👨‍👩‍👧"
+  },
+  {
+   "cz": "manželka",
+   "en": "wife",
+   "tr": "eş (kadın)",
+   "emoji": "👩",
+   "say": "MAN-zhel-ka"
+  },
+  {
+   "cz": "manžel",
+   "en": "husband",
+   "tr": "eş (erkek)",
+   "emoji": "👨"
+  },
+  {
+   "cz": "děti",
+   "en": "children",
+   "tr": "çocuklar",
+   "emoji": "🧒",
+   "say": "DYE-ti"
+  },
+  {
+   "cz": "syn",
+   "en": "son",
+   "tr": "oğul",
+   "emoji": "👦"
+  },
+  {
+   "cz": "dcera",
+   "en": "daughter",
+   "tr": "kız",
+   "emoji": "👧",
+   "say": "TSE-ra"
+  },
+  {
+   "cz": "máma / táta",
+   "en": "mum / dad",
+   "tr": "anne / baba",
+   "emoji": "🧑‍🍼"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Kolega",
+   "cz": "Máš děti?",
+   "en": "Do you have kids?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ano. Mám syna.",
+   "en": "Yes. I have a son."
+  },
+  {
+   "who": "Ty",
+   "cz": "To je moje manželka.",
+   "en": "This is my wife."
+  },
+  {
+   "who": "Kolega",
+   "cz": "Těší mě!",
+   "en": "Nice to meet you!"
+  }
+ ],
+ "pattern": {
+  "cz": "To je moje ___.",
+  "en": "This is my ___. manželka, máma, dcera."
+ }
+}

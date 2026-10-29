@@ -1,0 +1,103 @@
+{
+ "n": 12,
+ "title": "Today, tomorrow, the weekend",
+ "line": "C",
+ "why": "Make plans: today, tomorrow, morning, evening, weekend.",
+ "bridge": {
+  "title": "Time words in a row",
+  "rows": [
+   {
+    "cz": "včera",
+    "tr": "dün",
+    "ex": "⬅️",
+    "note": "yesterday"
+   },
+   {
+    "cz": "dnes",
+    "tr": "bugün",
+    "ex": "📍",
+    "note": "today"
+   },
+   {
+    "cz": "zítra",
+    "tr": "yarın",
+    "ex": "➡️",
+    "note": "tomorrow"
+   }
+  ],
+  "note": "'Dneska' is the casual form of dnes. You'll hear it more often."
+ },
+ "words": [
+  {
+   "cz": "dnes / dneska",
+   "en": "today",
+   "tr": "bugün",
+   "emoji": "📅"
+  },
+  {
+   "cz": "zítra",
+   "en": "tomorrow",
+   "tr": "yarın",
+   "emoji": "➡️",
+   "say": "ZEE-tra"
+  },
+  {
+   "cz": "včera",
+   "en": "yesterday",
+   "tr": "dün",
+   "emoji": "⬅️",
+   "say": "FCHE-ra"
+  },
+  {
+   "cz": "ráno",
+   "en": "morning",
+   "tr": "sabah",
+   "emoji": "🌅"
+  },
+  {
+   "cz": "večer",
+   "en": "evening",
+   "tr": "akşam",
+   "emoji": "🌙",
+   "say": "VE-cher"
+  },
+  {
+   "cz": "víkend",
+   "en": "weekend",
+   "tr": "hafta sonu",
+   "emoji": "🏖️"
+  },
+  {
+   "cz": "Kolik je hodin?",
+   "en": "What time is it?",
+   "tr": "Saat kaç?",
+   "emoji": "⏰"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Kolega",
+   "cz": "Máš čas zítra večer?",
+   "en": "Are you free tomorrow evening?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Zítra ne. O víkendu ano.",
+   "en": "Tomorrow no. At the weekend yes."
+  },
+  {
+   "who": "Kolega",
+   "cz": "Super. Na pivo?",
+   "en": "Great. For a beer?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Jo!",
+   "en": "Yeah!"
+  }
+ ],
+ "pattern": {
+  "cz": "Zítra ___ ano / ne.",
+  "en": "Tomorrow ___ yes / no. ráno, večer."
+ }
+}

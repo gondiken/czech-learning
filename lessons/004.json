@@ -1,0 +1,119 @@
+{
+ "n": 4,
+ "title": "Numbers 1 to 10",
+ "line": "A",
+ "why": "Prices, tram numbers, house numbers. Ten small words you will use daily.",
+ "bridge": {
+  "title": "Two tricky sounds",
+  "rows": [
+   {
+    "cz": "ř",
+    "tr": "—",
+    "ex": "tři",
+    "note": "roll the r and buzz 'j' at once: 'trzhi'"
+   },
+   {
+    "cz": "sedm",
+    "tr": "—",
+    "ex": "sedm",
+    "note": "say 'SE-dum'"
+   },
+   {
+    "cz": "osm",
+    "tr": "—",
+    "ex": "osm",
+    "note": "say 'O-sum'"
+   }
+  ],
+  "note": "ř is the one sound Turkish doesn't have. Nobody will mind if you say 'trzi' for now."
+ },
+ "words": [
+  {
+   "cz": "jedna",
+   "en": "one",
+   "tr": "bir",
+   "emoji": "1️⃣"
+  },
+  {
+   "cz": "dva",
+   "en": "two",
+   "tr": "iki",
+   "emoji": "2️⃣"
+  },
+  {
+   "cz": "tři",
+   "en": "three",
+   "tr": "üç",
+   "emoji": "3️⃣",
+   "say": "trzhi"
+  },
+  {
+   "cz": "čtyři",
+   "en": "four",
+   "tr": "dört",
+   "emoji": "4️⃣",
+   "say": "CHTI-rzhi"
+  },
+  {
+   "cz": "pět",
+   "en": "five",
+   "tr": "beş",
+   "emoji": "5️⃣",
+   "say": "pyet"
+  },
+  {
+   "cz": "šest",
+   "en": "six",
+   "tr": "altı",
+   "emoji": "6️⃣"
+  },
+  {
+   "cz": "sedm",
+   "en": "seven",
+   "tr": "yedi",
+   "emoji": "7️⃣",
+   "say": "SE-dum"
+  },
+  {
+   "cz": "osm",
+   "en": "eight",
+   "tr": "sekiz",
+   "emoji": "8️⃣",
+   "say": "O-sum"
+  },
+  {
+   "cz": "devět",
+   "en": "nine",
+   "tr": "dokuz",
+   "emoji": "9️⃣",
+   "say": "DE-vyet"
+  },
+  {
+   "cz": "deset",
+   "en": "ten",
+   "tr": "on",
+   "emoji": "🔟"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "Dvě piva, prosím.",
+   "en": "Two beers, please."
+  },
+  {
+   "who": "Číšník",
+   "cz": "Dvě piva. Ještě něco?",
+   "en": "Two beers. Anything else?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Tři kafe.",
+   "en": "Three coffees."
+  }
+ ],
+ "pattern": {
+  "cz": "Dvě / tři / čtyři piva",
+  "en": "2–4 take 'piva'. From 5 on: pět piv. Don't worry, you'll be understood either way."
+ }
+}

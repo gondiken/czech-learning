@@ -1,0 +1,99 @@
+{
+ "n": 7,
+ "title": "Introduce yourself",
+ "line": "B",
+ "why": "Neighbours and colleagues will love it when you can say who you are in Czech.",
+ "bridge": {
+  "title": "You already think in cases",
+  "rows": [
+   {
+    "cz": "z Turecka",
+    "tr": "Türkiye'den",
+    "ex": "from",
+    "note": "z + ending = -den"
+   },
+   {
+    "cz": "v Česku",
+    "tr": "Çekya'da",
+    "ex": "in",
+    "note": "v + ending = -de"
+   },
+   {
+    "cz": "do Prahy",
+    "tr": "Prag'a",
+    "ex": "to",
+    "note": "do + ending = -e"
+   }
+  ],
+  "note": "Czech does with a preposition + ending what Turkish does with one suffix. That's the famous 'Czech cases'. You've used cases all your life."
+ },
+ "words": [
+  {
+   "cz": "Jmenuji se …",
+   "en": "My name is …",
+   "tr": "Benim adım …",
+   "emoji": "🪪",
+   "say": "YME-nu-yi se"
+  },
+  {
+   "cz": "Jsem z Turecka",
+   "en": "I'm from Turkey",
+   "tr": "Türkiye'denim",
+   "emoji": "🇹🇷"
+  },
+  {
+   "cz": "Bydlím v Česku",
+   "en": "I live in Czechia",
+   "tr": "Çekya'da yaşıyorum",
+   "emoji": "🏠",
+   "say": "BID-leem"
+  },
+  {
+   "cz": "Pracuji",
+   "en": "I work",
+   "tr": "Çalışıyorum",
+   "emoji": "💼",
+   "say": "PRA-tsu-yi"
+  },
+  {
+   "cz": "Učím se česky",
+   "en": "I'm learning Czech",
+   "tr": "Çekçe öğreniyorum",
+   "emoji": "📚",
+   "say": "U-cheem se CHES-ki"
+  },
+  {
+   "cz": "Těší mě",
+   "en": "Nice to meet you",
+   "tr": "Memnun oldum",
+   "emoji": "🤝",
+   "say": "TYE-shee mnye"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Soused",
+   "cz": "Ahoj! Jak se jmenuješ?",
+   "en": "Hi! What's your name?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Jmenuji se … Jsem z Turecka.",
+   "en": "My name is … I'm from Turkey."
+  },
+  {
+   "who": "Soused",
+   "cz": "Těší mě! Mluvíš česky?",
+   "en": "Nice to meet you! Do you speak Czech?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Trochu. Učím se česky.",
+   "en": "A little. I'm learning Czech."
+  }
+ ],
+ "pattern": {
+  "cz": "Jsem z ___.",
+  "en": "I'm from ___. Turecka, Istanbulu, Ankary."
+ }
+}

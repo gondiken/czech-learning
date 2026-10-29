@@ -1,0 +1,97 @@
+{
+ "n": 6,
+ "title": "The grocery basket",
+ "line": "A",
+ "why": "Seven things that are in every Czech fridge, including the rohlík, the national bread roll.",
+ "bridge": {
+  "title": "The čárka makes vowels long",
+  "rows": [
+   {
+    "cz": "á",
+    "tr": "aa",
+    "ex": "máslo",
+    "note": "hold it: 'MAA-slo'"
+   },
+   {
+    "cz": "ý / í",
+    "tr": "ii",
+    "ex": "sýr",
+    "note": "'seer'"
+   },
+   {
+    "cz": "ů",
+    "tr": "uu",
+    "ex": "domů",
+    "note": "the little ring = long u"
+   }
+  ],
+  "note": "Turkish doesn't mark long vowels. In Czech the accent mark ´ only means 'hold it longer'. Stress stays on the first syllable."
+ },
+ "words": [
+  {
+   "cz": "chleba",
+   "en": "bread",
+   "tr": "ekmek",
+   "emoji": "🍞",
+   "say": "HLE-ba"
+  },
+  {
+   "cz": "rohlík",
+   "en": "bread roll",
+   "tr": "sandviç ekmeği",
+   "emoji": "🥖"
+  },
+  {
+   "cz": "mléko",
+   "en": "milk",
+   "tr": "süt",
+   "emoji": "🥛"
+  },
+  {
+   "cz": "sýr",
+   "en": "cheese",
+   "tr": "peynir",
+   "emoji": "🧀"
+  },
+  {
+   "cz": "máslo",
+   "en": "butter",
+   "tr": "tereyağı",
+   "emoji": "🧈"
+  },
+  {
+   "cz": "vejce",
+   "en": "eggs / egg",
+   "tr": "yumurta",
+   "emoji": "🥚",
+   "say": "VEY-tse"
+  },
+  {
+   "cz": "jablko",
+   "en": "apple",
+   "tr": "elma",
+   "emoji": "🍎"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "Promiňte, máte rohlíky?",
+   "en": "Excuse me, do you have rolls?"
+  },
+  {
+   "who": "Prodavač",
+   "cz": "Ano, tam.",
+   "en": "Yes, over there."
+  },
+  {
+   "who": "Ty",
+   "cz": "Děkuji.",
+   "en": "Thanks."
+  }
+ ],
+ "pattern": {
+  "cz": "Máte ___?",
+  "en": "Do you have ___? Try: chleba, mléko, sýr."
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "n": 13,
+ "title": "Pharmacy and doctor",
+ "line": "C",
+ "why": "The day you need these, you won't want to look them up. Learn them while you're healthy.",
+ "bridge": {
+  "title": "'It hurts me' = 'bana acıyor'",
+  "rows": [
+   {
+    "cz": "Bolí mě hlava",
+    "tr": "başım ağrıyor",
+    "ex": "🤕",
+    "note": "literally: head hurts me"
+   },
+   {
+    "cz": "Bolí mě v krku",
+    "tr": "boğazım ağrıyor",
+    "ex": "🗣️",
+    "note": "sore throat"
+   },
+   {
+    "cz": "Bolí mě zub",
+    "tr": "dişim ağrıyor",
+    "ex": "🦷",
+    "note": "toothache"
+   }
+  ],
+  "note": "Swap the body part and the sentence still works."
+ },
+ "words": [
+  {
+   "cz": "lékárna",
+   "en": "pharmacy",
+   "tr": "eczane",
+   "emoji": "💊",
+   "say": "LEH-kaar-na"
+  },
+  {
+   "cz": "Bolí mě hlava",
+   "en": "I have a headache",
+   "tr": "Başım ağrıyor",
+   "emoji": "🤕"
+  },
+  {
+   "cz": "Bolí mě v krku",
+   "en": "I have a sore throat",
+   "tr": "Boğazım ağrıyor",
+   "emoji": "🗣️"
+  },
+  {
+   "cz": "horečka",
+   "en": "fever",
+   "tr": "ateş",
+   "emoji": "🌡️",
+   "say": "HO-rech-ka"
+  },
+  {
+   "cz": "Je mi špatně",
+   "en": "I feel sick",
+   "tr": "Midem bulanıyor / kötüyüm",
+   "emoji": "🤢",
+   "say": "ye mi SHPAT-nye"
+  },
+  {
+   "cz": "recept",
+   "en": "prescription",
+   "tr": "reçete",
+   "emoji": "📄",
+   "say": "RE-tsept"
+  },
+  {
+   "cz": "kartička pojišťovny",
+   "en": "health-insurance card",
+   "tr": "sigorta kartı",
+   "emoji": "🪪"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Lékárnice",
+   "cz": "Dobrý den, prosím?",
+   "en": "Hello, how can I help?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Dobrý den. Bolí mě v krku.",
+   "en": "Hello. I have a sore throat."
+  },
+  {
+   "who": "Lékárnice",
+   "cz": "Máte horečku?",
+   "en": "Do you have a fever?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ne.",
+   "en": "No."
+  },
+  {
+   "who": "Lékárnice",
+   "cz": "Tak tohle. Sto dvacet korun.",
+   "en": "Then this. 120 crowns."
+  }
+ ],
+ "pattern": {
+  "cz": "Bolí mě ___.",
+  "en": "My ___ hurts. hlava, zub, záda (back)."
+ }
+}

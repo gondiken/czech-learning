@@ -1,0 +1,100 @@
+{
+ "n": 9,
+ "title": "Bigger numbers and prices",
+ "line": "B",
+ "why": "Prices go up to hundreds. Czech builds big numbers in the same order as Turkish.",
+ "bridge": {
+  "title": "Same order as Turkish",
+  "rows": [
+   {
+    "cz": "dvacet pět",
+    "tr": "yirmi beş",
+    "ex": "25",
+    "note": "tens first, then ones"
+   },
+   {
+    "cz": "-náct",
+    "tr": "on-",
+    "ex": "jedenáct",
+    "note": "= teen (11–19)"
+   },
+   {
+    "cz": "-cet / -desát",
+    "tr": "-",
+    "ex": "dvacet, padesát",
+    "note": "= tens"
+   }
+  ],
+  "note": "Unlike German, Czech says 'twenty five' in the natural order. Yirmi beş = dvacet pět."
+ },
+ "words": [
+  {
+   "cz": "jedenáct",
+   "en": "eleven",
+   "tr": "on bir",
+   "emoji": "🔢"
+  },
+  {
+   "cz": "dvanáct",
+   "en": "twelve",
+   "tr": "on iki",
+   "emoji": "🕛"
+  },
+  {
+   "cz": "dvacet",
+   "en": "twenty",
+   "tr": "yirmi",
+   "emoji": "2️⃣0️⃣"
+  },
+  {
+   "cz": "třicet",
+   "en": "thirty",
+   "tr": "otuz",
+   "emoji": "3️⃣0️⃣"
+  },
+  {
+   "cz": "padesát",
+   "en": "fifty",
+   "tr": "elli",
+   "emoji": "5️⃣0️⃣"
+  },
+  {
+   "cz": "sto",
+   "en": "a hundred",
+   "tr": "yüz",
+   "emoji": "💯"
+  },
+  {
+   "cz": "dvě stě",
+   "en": "two hundred",
+   "tr": "iki yüz",
+   "emoji": "💰"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "Kolik to stojí?",
+   "en": "How much is it?"
+  },
+  {
+   "who": "Prodavač",
+   "cz": "Padesát pět korun.",
+   "en": "55 crowns."
+  },
+  {
+   "who": "Ty",
+   "cz": "Pomalu, prosím.",
+   "en": "Slowly, please."
+  },
+  {
+   "who": "Prodavač",
+   "cz": "Pa-de-sát pět.",
+   "en": "Fif-ty five."
+  }
+ ],
+ "pattern": {
+  "cz": "___ korun",
+  "en": "___ crowns. Try: dvacet, padesát, sto."
+ }
+}

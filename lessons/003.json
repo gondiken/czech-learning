@@ -1,0 +1,116 @@
+{
+ "n": 3,
+ "title": "At the café and the pub",
+ "line": "A",
+ "why": "You can order like a local tonight. Water changes shape when you order it, and Turkish already does the same thing.",
+ "bridge": {
+  "title": "Ordering ending = Turkish accusative",
+  "rows": [
+   {
+    "cz": "voda",
+    "tr": "su",
+    "ex": "vodu",
+    "note": "suyu — 'water' as the thing you want"
+   },
+   {
+    "cz": "káva",
+    "tr": "kahve",
+    "ex": "kávu",
+    "note": "kahveyi"
+   },
+   {
+    "cz": "pivo",
+    "tr": "bira",
+    "ex": "pivo",
+    "note": "neuter words don't change"
+   }
+  ],
+  "note": "'Prosím vodu' works just like 'suyu istiyorum'. The ending marks the thing you want."
+ },
+ "words": [
+  {
+   "cz": "kafe",
+   "en": "coffee (everyday word)",
+   "tr": "kahve",
+   "emoji": "☕"
+  },
+  {
+   "cz": "pivo",
+   "en": "beer",
+   "tr": "bira",
+   "emoji": "🍺"
+  },
+  {
+   "cz": "voda / vodu",
+   "en": "water / (I'd like) water",
+   "tr": "su / suyu",
+   "emoji": "💧"
+  },
+  {
+   "cz": "jedno",
+   "en": "one (for pivo, kafe)",
+   "tr": "bir",
+   "emoji": "1️⃣"
+  },
+  {
+   "cz": "Co si dáte?",
+   "en": "What will you have?",
+   "tr": "Ne alırsınız?",
+   "emoji": "🧑‍🍳"
+  },
+  {
+   "cz": "Zaplatím",
+   "en": "I'll pay (bill please)",
+   "tr": "Hesap lütfen",
+   "emoji": "💳",
+   "say": "ZA-pla-teem"
+  },
+  {
+   "cz": "kartou",
+   "en": "by card",
+   "tr": "kartla",
+   "emoji": "💳"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Číšník",
+   "cz": "Dobrý den, co si dáte?",
+   "en": "Hello, what will you have?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Jedno kafe a vodu, prosím.",
+   "en": "One coffee and water, please."
+  },
+  {
+   "who": "Číšník",
+   "cz": "Ještě něco?",
+   "en": "Anything else?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ne, děkuji.",
+   "en": "No, thanks."
+  },
+  {
+   "who": "Ty",
+   "cz": "Zaplatím, prosím.",
+   "en": "I'd like to pay, please."
+  },
+  {
+   "who": "Číšník",
+   "cz": "Kartou?",
+   "en": "By card?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ano, kartou.",
+   "en": "Yes, by card."
+  }
+ ],
+ "pattern": {
+  "cz": "Jedno ___, prosím.",
+  "en": "One ___, please. Try: pivo, kafe, čaj."
+ }
+}

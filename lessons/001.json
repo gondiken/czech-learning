@@ -1,0 +1,123 @@
+{
+ "n": 1,
+ "title": "Sounds you already know",
+ "line": "A",
+ "why": "Czech is spelled the way it sounds, just like Turkish. Half the letters that scare English speakers are letters you grew up with.",
+ "bridge": {
+  "title": "Turkish letters hiding in Czech",
+  "rows": [
+   {
+    "cz": "č",
+    "tr": "ç",
+    "ex": "čaj",
+    "note": "çay — tea"
+   },
+   {
+    "cz": "š",
+    "tr": "ş",
+    "ex": "šál",
+    "note": "şal — scarf"
+   },
+   {
+    "cz": "ž",
+    "tr": "j",
+    "ex": "žena",
+    "note": "like 'jüri' — woman"
+   },
+   {
+    "cz": "c",
+    "tr": "ts",
+    "ex": "cukr",
+    "note": "'tsukr' — sugar"
+   },
+   {
+    "cz": "j",
+    "tr": "y",
+    "ex": "ahoj",
+    "note": "'ahoy' — hi"
+   },
+   {
+    "cz": "y",
+    "tr": "i",
+    "ex": "sýr",
+    "note": "Turkish i, never ı"
+   }
+  ],
+  "note": "One big difference: Czech stresses the FIRST syllable. DOH-bree den, not doh-bree DEN."
+ },
+ "words": [
+  {
+   "cz": "Dobrý den",
+   "en": "Hello (polite, any time of day)",
+   "tr": "Merhaba / İyi günler",
+   "emoji": "👋",
+   "say": "DOH-bree den"
+  },
+  {
+   "cz": "Ahoj",
+   "en": "Hi / bye (friends, kids)",
+   "tr": "Selam",
+   "emoji": "🙋",
+   "say": "AH-hoy"
+  },
+  {
+   "cz": "Děkuji",
+   "en": "Thank you",
+   "tr": "Teşekkürler",
+   "emoji": "🙏",
+   "say": "DYEH-ku-yi"
+  },
+  {
+   "cz": "Prosím",
+   "en": "Please / here you go / pardon?",
+   "tr": "Lütfen / buyrun",
+   "emoji": "🤲",
+   "say": "PRO-seem"
+  },
+  {
+   "cz": "Na shledanou",
+   "en": "Goodbye (polite)",
+   "tr": "Hoşça kalın",
+   "emoji": "🚪",
+   "say": "NAS-hle-da-noh"
+  },
+  {
+   "cz": "čaj",
+   "en": "tea",
+   "tr": "çay",
+   "emoji": "🍵",
+   "say": "chai"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Prodavačka",
+   "cz": "Dobrý den.",
+   "en": "Hello."
+  },
+  {
+   "who": "Ty",
+   "cz": "Dobrý den.",
+   "en": "Hello."
+  },
+  {
+   "who": "Prodavačka",
+   "cz": "Prosím.",
+   "en": "Here you go."
+  },
+  {
+   "who": "Ty",
+   "cz": "Děkuji. Na shledanou.",
+   "en": "Thanks. Goodbye."
+  },
+  {
+   "who": "Prodavačka",
+   "cz": "Na shledanou.",
+   "en": "Goodbye."
+  }
+ ],
+ "pattern": {
+  "cz": "Dobrý den. … Děkuji. Na shledanou.",
+  "en": "The whole script for walking into and out of any Czech shop."
+ }
+}

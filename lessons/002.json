@@ -1,0 +1,97 @@
+{
+ "n": 2,
+ "title": "The survival switch",
+ "line": "A",
+ "why": "Six phrases that let you switch a conversation to English politely, or slow it down.",
+ "bridge": {
+  "title": "False friend alert",
+  "rows": [
+   {
+    "cz": "ne",
+    "tr": "ne?",
+    "ex": "Ne!",
+    "note": "Czech: NO. Not 'what?'"
+   },
+   {
+    "cz": "jo",
+    "tr": "yo",
+    "ex": "Jo jo.",
+    "note": "colloquial YES — you'll hear it everywhere"
+   }
+  ],
+  "note": "Czechs often answer 'jo' instead of 'ano'. Both mean yes."
+ },
+ "words": [
+  {
+   "cz": "Ano",
+   "en": "Yes",
+   "tr": "Evet",
+   "emoji": "✅"
+  },
+  {
+   "cz": "Ne",
+   "en": "No",
+   "tr": "Hayır",
+   "emoji": "❌"
+  },
+  {
+   "cz": "Promiňte",
+   "en": "Excuse me / sorry",
+   "tr": "Affedersiniz",
+   "emoji": "🙇",
+   "say": "PRO-min-ye-te"
+  },
+  {
+   "cz": "Nerozumím",
+   "en": "I don't understand",
+   "tr": "Anlamıyorum",
+   "emoji": "🤷",
+   "say": "NE-ro-zu-meem"
+  },
+  {
+   "cz": "Mluvíte anglicky?",
+   "en": "Do you speak English?",
+   "tr": "İngilizce konuşuyor musunuz?",
+   "emoji": "🇬🇧",
+   "say": "MLU-vee-te AN-glits-ki"
+  },
+  {
+   "cz": "Trochu",
+   "en": "A little",
+   "tr": "Biraz",
+   "emoji": "🤏"
+  },
+  {
+   "cz": "Pomalu, prosím",
+   "en": "Slowly, please",
+   "tr": "Yavaş lütfen",
+   "emoji": "🐢"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "Promiňte, mluvíte anglicky?",
+   "en": "Excuse me, do you speak English?"
+  },
+  {
+   "who": "Pán",
+   "cz": "Trochu.",
+   "en": "A little."
+  },
+  {
+   "who": "Pán",
+   "cz": "Kam jedete?",
+   "en": "Where are you going?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Nerozumím. Pomalu, prosím.",
+   "en": "I don't understand. Slowly, please."
+  }
+ ],
+ "pattern": {
+  "cz": "Promiňte, mluvíte anglicky?",
+  "en": "Your polite exit to English. Always start with Promiňte."
+ }
+}
