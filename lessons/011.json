@@ -93,5 +93,6 @@
  "pattern": {
   "cz": "Jednu jízdenku, prosím.",
   "en": "One ticket, please. (jízdenka → jízdenku, like voda → vodu)"
- }
+ },
+ "short": "Transport"
 }

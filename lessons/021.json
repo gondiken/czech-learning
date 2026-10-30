@@ -1,0 +1,125 @@
+{
+ "n": 21,
+ "short": "Saturday",
+ "line": "C",
+ "title": "A Saturday in town",
+ "why": "Week three done. One story that uses the market, money, small talk and going home.",
+ "bridge": {
+  "title": "Home with three endings",
+  "rows": [
+   {
+    "cz": "doma",
+    "tr": "evde",
+    "ex": "🏠",
+    "note": "at home"
+   },
+   {
+    "cz": "domů",
+    "tr": "eve",
+    "ex": "➡️🏠",
+    "note": "(going) home"
+   },
+   {
+    "cz": "z domu",
+    "tr": "evden",
+    "ex": "⬅️🏠",
+    "note": "from home"
+   }
+  ],
+  "note": "Same pattern as Turkish -de, -e, -den. You have used it with cities already: v Praze, do Prahy, z Prahy."
+ },
+ "words": [
+  {
+   "cz": "sobota",
+   "en": "Saturday",
+   "tr": "cumartesi",
+   "emoji": "📅",
+   "say": "SO-bo-ta"
+  },
+  {
+   "cz": "město",
+   "en": "town / city",
+   "tr": "şehir",
+   "emoji": "🏙️",
+   "say": "MNYES-to"
+  },
+  {
+   "cz": "trh",
+   "en": "market",
+   "tr": "pazar",
+   "emoji": "🧺",
+   "say": "trh"
+  },
+  {
+   "cz": "doma",
+   "en": "at home",
+   "tr": "evde",
+   "emoji": "🏠"
+  },
+  {
+   "cz": "domů",
+   "en": "home (going there)",
+   "tr": "eve",
+   "emoji": "🏃"
+  },
+  {
+   "cz": "Hezký víkend!",
+   "en": "Have a nice weekend!",
+   "tr": "İyi hafta sonları!",
+   "emoji": "🌞"
+  },
+  {
+   "cz": "Vám taky",
+   "en": "You too",
+   "tr": "Size de",
+   "emoji": "↩️",
+   "say": "vaam TA-ki"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "V sobotu jdu do města na trh.",
+   "en": "On Saturday I go into town to the market."
+  },
+  {
+   "who": "Prodavačka",
+   "cz": "Dobrý den, co si dáte?",
+   "en": "Hello, what will you have?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Jablka a chleba, prosím.",
+   "en": "Apples and bread, please."
+  },
+  {
+   "who": "Prodavačka",
+   "cz": "Sto padesát korun.",
+   "en": "150 crowns."
+  },
+  {
+   "who": "Ty",
+   "cz": "Kartou.",
+   "en": "By card."
+  },
+  {
+   "who": "Prodavačka",
+   "cz": "Hezký víkend!",
+   "en": "Have a nice weekend!"
+  },
+  {
+   "who": "Ty",
+   "cz": "Vám taky! Nashle.",
+   "en": "You too! Bye."
+  },
+  {
+   "who": "Ty",
+   "cz": "Tak, a teď domů.",
+   "en": "Right, and now home."
+  }
+ ],
+ "pattern": {
+  "cz": "Jdu domů. / Jsem doma.",
+  "en": "I'm going home. / I'm at home."
+ }
+}

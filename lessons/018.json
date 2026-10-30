@@ -1,0 +1,111 @@
+{
+ "n": 18,
+ "short": "Weather",
+ "line": "B",
+ "title": "Talking about the weather",
+ "why": "The safest small talk in any language. Czech weather sentences are short, often a single word.",
+ "bridge": {
+  "title": "No 'it' needed",
+  "rows": [
+   {
+    "cz": "Prší.",
+    "tr": "Yağıyor.",
+    "ex": "🌧️",
+    "note": "one word: it's raining"
+   },
+   {
+    "cz": "Je zima.",
+    "tr": "Hava soğuk.",
+    "ex": "🥶",
+    "note": "zima = both 'cold' and 'winter'"
+   },
+   {
+    "cz": "…, co?",
+    "tr": "…, değil mi?",
+    "ex": "🤝",
+    "note": "tag question: Je zima, co?"
+   }
+  ],
+  "note": "Czech drops the 'it' in weather, just like Turkish. 'Co?' on the end works like 'değil mi?'."
+ },
+ "words": [
+  {
+   "cz": "počasí",
+   "en": "weather",
+   "tr": "hava",
+   "emoji": "🌦️",
+   "say": "PO-cha-see"
+  },
+  {
+   "cz": "prší",
+   "en": "it's raining",
+   "tr": "yağmur yağıyor",
+   "emoji": "🌧️",
+   "say": "PR-shee"
+  },
+  {
+   "cz": "sněží",
+   "en": "it's snowing",
+   "tr": "kar yağıyor",
+   "emoji": "❄️",
+   "say": "SNYE-zhee"
+  },
+  {
+   "cz": "je zima",
+   "en": "it's cold",
+   "tr": "hava soğuk",
+   "emoji": "🥶"
+  },
+  {
+   "cz": "je teplo",
+   "en": "it's warm",
+   "tr": "hava sıcak",
+   "emoji": "☀️"
+  },
+  {
+   "cz": "je hezky",
+   "en": "it's nice out",
+   "tr": "hava güzel",
+   "emoji": "🌤️",
+   "say": "ye HES-ki"
+  },
+  {
+   "cz": "deštník",
+   "en": "umbrella",
+   "tr": "şemsiye",
+   "emoji": "☂️",
+   "say": "DESHT-nyeek"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Kolega",
+   "cz": "Dneska je zima, co?",
+   "en": "It's cold today, isn't it?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Jo, je zima. A zítra prší.",
+   "en": "Yeah, it's cold. And tomorrow it rains."
+  },
+  {
+   "who": "Kolega",
+   "cz": "Máš deštník?",
+   "en": "Do you have an umbrella?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Nemám.",
+   "en": "I don't."
+  },
+  {
+   "who": "Kolega",
+   "cz": "Ach jo.",
+   "en": "Oh dear."
+  }
+ ],
+ "pattern": {
+  "cz": "Dneska je ___, co?",
+  "en": "It's ___ today, isn't it? zima, teplo, hezky."
+ }
+}

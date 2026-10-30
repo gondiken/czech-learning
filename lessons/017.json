@@ -1,0 +1,112 @@
+{
+ "n": 17,
+ "short": "Home",
+ "line": "B",
+ "title": "Home and neighbours",
+ "why": "Your building: the lift, the cellar, the keys, and the neighbours you meet on the stairs.",
+ "bridge": {
+  "title": "Building manners",
+  "rows": [
+   {
+    "cz": "Dobrý den",
+    "tr": "Merhaba",
+    "ex": "🛗",
+    "note": "Czechs greet everyone in the lift and on the stairs"
+   },
+   {
+    "cz": "Nashle",
+    "tr": "Hoşça kal",
+    "ex": "👋",
+    "note": "the short, everyday Na shledanou"
+   },
+   {
+    "cz": "Pozor!",
+    "tr": "Dikkat!",
+    "ex": "⚠️",
+    "note": "on signs and shouted on stairs"
+   }
+  ],
+  "note": "Saying 'Dobrý den' to every neighbour, even strangers, is the normal Czech habit. It costs two words and earns a lot."
+ },
+ "words": [
+  {
+   "cz": "byt",
+   "en": "flat / apartment",
+   "tr": "daire",
+   "emoji": "🏢",
+   "say": "bit"
+  },
+  {
+   "cz": "klíč",
+   "en": "key",
+   "tr": "anahtar",
+   "emoji": "🔑",
+   "say": "kleech"
+  },
+  {
+   "cz": "výtah",
+   "en": "lift",
+   "tr": "asansör",
+   "emoji": "🛗",
+   "say": "VEE-tah"
+  },
+  {
+   "cz": "sklep",
+   "en": "cellar",
+   "tr": "bodrum",
+   "emoji": "🗄️"
+  },
+  {
+   "cz": "soused / sousedka",
+   "en": "neighbour (m / f)",
+   "tr": "komşu",
+   "emoji": "🧑‍🤝‍🧑",
+   "say": "SO-ust"
+  },
+  {
+   "cz": "nahoru / dolů",
+   "en": "up / down",
+   "tr": "yukarı / aşağı",
+   "emoji": "↕️",
+   "say": "NA-ho-ru / DO-loo"
+  },
+  {
+   "cz": "Nashle",
+   "en": "Bye (short)",
+   "tr": "Hoşça kal",
+   "emoji": "👋",
+   "say": "NAS-hle"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Sousedka",
+   "cz": "Dobrý den. Nahoru?",
+   "en": "Hello. Going up?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ano, děkuji.",
+   "en": "Yes, thanks."
+  },
+  {
+   "who": "Ty",
+   "cz": "Promiňte, kde je sklep?",
+   "en": "Excuse me, where is the cellar?"
+  },
+  {
+   "who": "Sousedka",
+   "cz": "Dolů a vlevo.",
+   "en": "Down and to the left."
+  },
+  {
+   "who": "Ty",
+   "cz": "Děkuji. Nashle!",
+   "en": "Thanks. Bye!"
+  }
+ ],
+ "pattern": {
+  "cz": "Nahoru, nebo dolů?",
+  "en": "Up or down? Ask it in the lift."
+ }
+}

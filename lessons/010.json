@@ -94,5 +94,6 @@
  "pattern": {
   "cz": "Kde je ___?",
   "en": "Where is ___? záchod, metro, lékárna."
- }
+ },
+ "short": "Directions"
 }

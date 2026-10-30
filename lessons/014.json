@@ -108,5 +108,6 @@
  "pattern": {
   "cz": "Dobře, děkuji. A vy?",
   "en": "The reply to every 'Jak se máte?'."
- }
+ },
+ "short": "Small talk"
 }

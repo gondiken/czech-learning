@@ -93,5 +93,6 @@
  "pattern": {
   "cz": "Promiňte, mluvíte anglicky?",
   "en": "Your polite exit to English. Always start with Promiňte."
- }
+ },
+ "short": "Survival"
 }

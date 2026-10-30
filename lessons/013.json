@@ -105,5 +105,6 @@
  "pattern": {
   "cz": "Bolí mě ___.",
   "en": "My ___ hurts. hlava, zub, záda (back)."
- }
+ },
+ "short": "Pharmacy"
 }

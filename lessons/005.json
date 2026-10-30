@@ -117,5 +117,6 @@
  "pattern": {
   "cz": "Kolik to stojí?",
   "en": "Point at anything and ask."
- }
+ },
+ "short": "At the till"
 }

@@ -14,21 +14,15 @@ Design rules for every lesson
 - Recycle 2–3 words the learner missed recently (from `progress/main.log[].missed`) inside new dialogues.
 - Line colours rotate like Prague metro lines: A (green), B (yellow), C (red), 6 lessons… roughly.
 
-Done: stations 1–14 (greetings, survival, café, numbers, till, groceries, intro + cases, family,
-big numbers, directions, transport, time words, pharmacy, small talk).
+Done: stations 1–21 (greetings, survival, café, numbers, till, groceries, intro + cases, family,
+big numbers, directions, transport, time words, pharmacy, small talk, restaurant, být/mít,
+home & neighbours, weather, chci/chtěl bych/můžu, parcels, Saturday review story).
 
 Next stations (write in this order, adjust to what the learner struggles with)
-15. Restaurant: polévka, hlavní jídlo, knedlíky, svíčková, "Dohromady, nebo zvlášť?" (together or separately?)
-16. Core verbs I: být (jsem, jsi, je), mít (mám, máš, má) — bridge: Turkish personal endings -im/-sin
-17. At home & neighbours: byt, klíč, sklep, výtah, "Dobrý den" in the lift
-18. Weather & seasons: prší, sněží, zima, teplo, je hezky
-19. Core verbs II: chci / chtěl bych (I'd like), můžu (can I)
-20. Post office & parcels: balík, Zásilkovna, výdejní místo, podpis
-21. Review story: a Saturday in town
 22. Kids & school: školka, škola, učitelka, "Kdy končí?" (when does it finish?)
 23. Going places: jít vs jet (on foot vs by vehicle) — bridge: Turkish yürümek/gitmek
 24. Clothes & sizes, "Můžu si to zkusit?"
-25. Food words II + "Dobrou chuť" (lunch at work, the one Czech phrase colleagues always use)
+25. Fruit, veg & the butcher: ovoce, zelenina, maso, "Kolik stojí kilo?"
 26. Foreign police / offices: povolení k pobytu, formulář, razítko, "Kde je přepážka?"
 27. Feelings & opinions: líbí se mi, nelíbí, mám rád / ráda
 28. Review story: a call with the doctor's receptionist

@@ -115,5 +115,6 @@
  "pattern": {
   "cz": "Dvě / tři / čtyři piva",
   "en": "2–4 take 'piva'. From 5 on: pět piv. Don't worry, you'll be understood either way."
- }
+ },
+ "short": "1 – 10"
 }

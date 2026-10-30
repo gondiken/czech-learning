@@ -95,5 +95,6 @@
  "pattern": {
   "cz": "Jsem z ___.",
   "en": "I'm from ___. Turecka, Istanbulu, Ankary."
- }
+ },
+ "short": "About me"
 }

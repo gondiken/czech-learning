@@ -1,0 +1,127 @@
+{
+ "n": 15,
+ "short": "Restaurant",
+ "line": "A",
+ "title": "Lunch at the restaurant",
+ "why": "Order a real Czech lunch: soup first, then the main course. You'll also learn the two phrases every Czech table uses.",
+ "bridge": {
+  "title": "Table phrases you already have",
+  "rows": [
+   {
+    "cz": "Dobrou chuť",
+    "tr": "Afiyet olsun",
+    "ex": "😋",
+    "note": "said before eating; colleagues say it at lunch"
+   },
+   {
+    "cz": "Na zdraví",
+    "tr": "Şerefe",
+    "ex": "🍻",
+    "note": "look people in the eye when you clink"
+   },
+   {
+    "cz": "Dohromady?",
+    "tr": "Beraber mi?",
+    "ex": "🧾",
+    "note": "the waiter asks if you're paying together"
+   }
+  ],
+  "note": "Answer the waiter with 'dohromady' (together) or 'zvlášť' (separately)."
+ },
+ "words": [
+  {
+   "cz": "polévka",
+   "en": "soup",
+   "tr": "çorba",
+   "emoji": "🍲",
+   "say": "PO-lehf-ka"
+  },
+  {
+   "cz": "hlavní jídlo",
+   "en": "main course",
+   "tr": "ana yemek",
+   "emoji": "🍽️",
+   "say": "HLAV-nyee YEED-lo"
+  },
+  {
+   "cz": "knedlíky",
+   "en": "dumplings",
+   "tr": "Çek hamur köftesi",
+   "emoji": "🥟",
+   "say": "KNED-lee-ki"
+  },
+  {
+   "cz": "svíčková",
+   "en": "beef in cream sauce",
+   "tr": "kremalı dana (Çek klasiği)",
+   "emoji": "🥩",
+   "say": "SVEECH-ko-vaa"
+  },
+  {
+   "cz": "Dám si …",
+   "en": "I'll have …",
+   "tr": "… alayım",
+   "emoji": "👉"
+  },
+  {
+   "cz": "Dobrou chuť",
+   "en": "Enjoy your meal",
+   "tr": "Afiyet olsun",
+   "emoji": "😋",
+   "say": "DOB-roh hut"
+  },
+  {
+   "cz": "zvlášť",
+   "en": "separately",
+   "tr": "ayrı ayrı",
+   "emoji": "➗",
+   "say": "zvlaasht"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Číšník",
+   "cz": "Máte vybráno?",
+   "en": "Have you chosen?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ano. Dám si polévku a svíčkovou.",
+   "en": "Yes. I'll have the soup and the svíčková."
+  },
+  {
+   "who": "Číšník",
+   "cz": "A k pití?",
+   "en": "And to drink?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Jedno pivo, prosím.",
+   "en": "One beer, please."
+  },
+  {
+   "who": "Číšník",
+   "cz": "Dobrou chuť.",
+   "en": "Enjoy your meal."
+  },
+  {
+   "who": "Ty",
+   "cz": "Zaplatím, prosím.",
+   "en": "I'd like to pay, please."
+  },
+  {
+   "who": "Číšník",
+   "cz": "Dohromady, nebo zvlášť?",
+   "en": "Together or separately?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Zvlášť.",
+   "en": "Separately."
+  }
+ ],
+ "pattern": {
+  "cz": "Dám si ___.",
+  "en": "I'll have ___. polévku, svíčkovou, pivo."
+ }
+}

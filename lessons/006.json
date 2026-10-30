@@ -93,5 +93,6 @@
  "pattern": {
   "cz": "Máte ___?",
   "en": "Do you have ___? Try: chleba, mléko, sýr."
- }
+ },
+ "short": "Groceries"
 }

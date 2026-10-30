@@ -1,0 +1,111 @@
+{
+ "n": 16,
+ "short": "I am · I have",
+ "line": "B",
+ "title": "I am, I have",
+ "why": "Two verbs carry half of everyday Czech: být (to be) and mít (to have). Their endings work like Turkish personal endings.",
+ "bridge": {
+  "title": "Personal endings, like Turkish",
+  "rows": [
+   {
+    "cz": "jsem",
+    "tr": "-(y)im",
+    "ex": "Jsem doma.",
+    "note": "Evdeyim. I'm home."
+   },
+   {
+    "cz": "jsi",
+    "tr": "-sin",
+    "ex": "Jsi doma?",
+    "note": "Evde misin? Are you home?"
+   },
+   {
+    "cz": "ne-",
+    "tr": "-me / yok",
+    "ex": "Nemám čas.",
+    "note": "Vaktim yok. ne- sticks to the verb like -me-"
+   }
+  ],
+  "note": "Like Turkish, Czech usually drops 'I' and 'you'. The verb ending already says who."
+ },
+ "words": [
+  {
+   "cz": "jsem",
+   "en": "I am",
+   "tr": "…(y)im",
+   "emoji": "🙋",
+   "say": "ysem"
+  },
+  {
+   "cz": "jsi",
+   "en": "you are",
+   "tr": "…sin",
+   "emoji": "👉",
+   "say": "ysi"
+  },
+  {
+   "cz": "je",
+   "en": "he / she / it is",
+   "tr": "…(dır)",
+   "emoji": "👤",
+   "say": "ye"
+  },
+  {
+   "cz": "mám",
+   "en": "I have",
+   "tr": "bende var",
+   "emoji": "✋"
+  },
+  {
+   "cz": "nemám",
+   "en": "I don't have",
+   "tr": "bende yok",
+   "emoji": "🙅"
+  },
+  {
+   "cz": "čas",
+   "en": "time",
+   "tr": "vakit",
+   "emoji": "⏳",
+   "say": "chas"
+  },
+  {
+   "cz": "schůzka",
+   "en": "meeting / appointment",
+   "tr": "toplantı / randevu",
+   "emoji": "📅",
+   "say": "SKHOOZ-ka"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Kolega",
+   "cz": "Ahoj, jsi tady nový?",
+   "en": "Hi, are you new here?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Ne, jsem tady rok. Jsem z Turecka.",
+   "en": "No, I've been here a year. I'm from Turkey."
+  },
+  {
+   "who": "Kolega",
+   "cz": "Máš čas na kafe?",
+   "en": "Do you have time for a coffee?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Teď ne. Mám schůzku.",
+   "en": "Not now. I have a meeting."
+  },
+  {
+   "who": "Kolega",
+   "cz": "Tak zítra!",
+   "en": "Tomorrow then!"
+  }
+ ],
+ "pattern": {
+  "cz": "Nemám ___.",
+  "en": "I don't have ___. čas, kartu, klíč."
+ }
+}

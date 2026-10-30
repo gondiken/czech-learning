@@ -1,0 +1,121 @@
+{
+ "n": 20,
+ "short": "Parcels",
+ "line": "C",
+ "title": "Picking up a parcel",
+ "why": "Zásilkovna, the post office, the pickup box. Learn to read the text message and get through the counter.",
+ "bridge": {
+  "title": "Read the text message",
+  "rows": [
+   {
+    "cz": "Vaše zásilka",
+    "tr": "Gönderiniz",
+    "ex": "📦",
+    "note": "your parcel"
+   },
+   {
+    "cz": "je připravena",
+    "tr": "hazır",
+    "ex": "✅",
+    "note": "is ready"
+   },
+   {
+    "cz": "k vyzvednutí",
+    "tr": "teslim almaya",
+    "ex": "🙋",
+    "note": "for pickup"
+   }
+  ],
+  "note": "That's the SMS you'll get. It now reads: 'Your parcel is ready for pickup.'"
+ },
+ "words": [
+  {
+   "cz": "balík",
+   "en": "parcel",
+   "tr": "paket / koli",
+   "emoji": "📦",
+   "say": "BA-leek"
+  },
+  {
+   "cz": "zásilka",
+   "en": "shipment",
+   "tr": "gönderi",
+   "emoji": "🚚",
+   "say": "ZAA-sil-ka"
+  },
+  {
+   "cz": "výdejní místo",
+   "en": "pickup point",
+   "tr": "teslim noktası",
+   "emoji": "📍",
+   "say": "VEE-dey-nyee MEES-to"
+  },
+  {
+   "cz": "kód",
+   "en": "code",
+   "tr": "kod",
+   "emoji": "🔢",
+   "say": "kohd"
+  },
+  {
+   "cz": "doklad",
+   "en": "ID document",
+   "tr": "kimlik",
+   "emoji": "🪪"
+  },
+  {
+   "cz": "podpis",
+   "en": "signature",
+   "tr": "imza",
+   "emoji": "✍️",
+   "say": "POT-pis"
+  },
+  {
+   "cz": "poslat",
+   "en": "to send",
+   "tr": "göndermek",
+   "emoji": "📮"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "Dobrý den, mám tady balík.",
+   "en": "Hello, I have a parcel here."
+  },
+  {
+   "who": "Pracovnice",
+   "cz": "Kód, prosím.",
+   "en": "The code, please."
+  },
+  {
+   "who": "Ty",
+   "cz": "Jedna, dva, tři, čtyři.",
+   "en": "One, two, three, four."
+  },
+  {
+   "who": "Pracovnice",
+   "cz": "Doklad?",
+   "en": "ID?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Prosím.",
+   "en": "Here you go."
+  },
+  {
+   "who": "Pracovnice",
+   "cz": "Podpis tady.",
+   "en": "Sign here."
+  },
+  {
+   "who": "Ty",
+   "cz": "Děkuji, nashle.",
+   "en": "Thanks, bye."
+  }
+ ],
+ "pattern": {
+  "cz": "Mám tady balík.",
+  "en": "I have a parcel here. (to collect)"
+ }
+}

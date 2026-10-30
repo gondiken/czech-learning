@@ -99,5 +99,6 @@
  "pattern": {
   "cz": "Zítra ___ ano / ne.",
   "en": "Tomorrow ___ yes / no. ráno, večer."
- }
+ },
+ "short": "Time"
 }

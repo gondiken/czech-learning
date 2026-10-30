@@ -1,0 +1,108 @@
+{
+ "n": 19,
+ "short": "I'd like",
+ "line": "A",
+ "title": "I'd like, can I?",
+ "why": "Polite requests. 'Chci' (I want) is fine with friends; 'chtěl bych' sounds nicer with strangers.",
+ "bridge": {
+  "title": "Polite forms you know from Turkish",
+  "rows": [
+   {
+    "cz": "chci",
+    "tr": "istiyorum",
+    "ex": "🙋",
+    "note": "direct; fine with friends"
+   },
+   {
+    "cz": "chtěl / chtěla bych",
+    "tr": "isterdim",
+    "ex": "🎩",
+    "note": "polite: chtěl for men, chtěla for women"
+   },
+   {
+    "cz": "Můžu …?",
+    "tr": "-ebilir miyim?",
+    "ex": "🙏",
+    "note": "Můžu platit kartou?"
+   }
+  ],
+  "note": "'Bych' does the job of Turkish -erdim: it softens the wish."
+ },
+ "words": [
+  {
+   "cz": "chci",
+   "en": "I want",
+   "tr": "istiyorum",
+   "emoji": "🙋",
+   "say": "htsi"
+  },
+  {
+   "cz": "chtěl bych",
+   "en": "I'd like (said by a man)",
+   "tr": "isterdim",
+   "emoji": "🎩",
+   "say": "HTYEL bih"
+  },
+  {
+   "cz": "chtěla bych",
+   "en": "I'd like (said by a woman)",
+   "tr": "isterdim",
+   "emoji": "🎩",
+   "say": "HTYE-la bih"
+  },
+  {
+   "cz": "Můžu …?",
+   "en": "Can I …?",
+   "tr": "…ebilir miyim?",
+   "emoji": "🙏",
+   "say": "MOO-zhu"
+  },
+  {
+   "cz": "potřebuju",
+   "en": "I need",
+   "tr": "ihtiyacım var",
+   "emoji": "🧰",
+   "say": "POT-rzhe-bu-yu"
+  },
+  {
+   "cz": "nevím",
+   "en": "I don't know",
+   "tr": "bilmiyorum",
+   "emoji": "🤷",
+   "say": "NE-veem"
+  },
+  {
+   "cz": "Jasně",
+   "en": "Sure / of course",
+   "tr": "Tabii",
+   "emoji": "👍",
+   "say": "YAS-nye"
+  }
+ ],
+ "dialog": [
+  {
+   "who": "Ty",
+   "cz": "Dobrý den, chtěl bych kafe.",
+   "en": "Hello, I'd like a coffee."
+  },
+  {
+   "who": "Číšník",
+   "cz": "Malé, nebo velké?",
+   "en": "Small or large?"
+  },
+  {
+   "who": "Ty",
+   "cz": "Velké. Můžu platit kartou?",
+   "en": "Large. Can I pay by card?"
+  },
+  {
+   "who": "Číšník",
+   "cz": "Jasně.",
+   "en": "Sure."
+  }
+ ],
+ "pattern": {
+  "cz": "Můžu ___?",
+  "en": "Can I ___? platit kartou, sednout si (sit down), otevřít okno (open the window)."
+ }
+}

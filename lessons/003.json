@@ -112,5 +112,6 @@
  "pattern": {
   "cz": "Jedno ___, prosím.",
   "en": "One ___, please. Try: pivo, kafe, čaj."
- }
+ },
+ "short": "Café"
 }

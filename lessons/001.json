@@ -119,5 +119,6 @@
  "pattern": {
   "cz": "Dobrý den. … Děkuji. Na shledanou.",
   "en": "The whole script for walking into and out of any Czech shop."
- }
+ },
+ "short": "Sounds"
 }

@@ -96,5 +96,6 @@
  "pattern": {
   "cz": "___ korun",
   "en": "___ crowns. Try: dvacet, padesát, sto."
- }
+ },
+ "short": "Prices"
 }

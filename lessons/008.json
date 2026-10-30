@@ -99,5 +99,6 @@
  "pattern": {
   "cz": "To je moje ___.",
   "en": "This is my ___. manželka, máma, dcera."
- }
+ },
+ "short": "Family"
 }
