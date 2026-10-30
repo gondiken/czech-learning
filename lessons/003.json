@@ -113,5 +113,24 @@
   "cz": "Jedno ___, prosím.",
   "en": "One ___, please. Try: pivo, kafe, čaj."
  },
- "short": "Café"
+ "short": "Café",
+ "silly": [
+  {
+   "cz": "Jedno pivo pro kočku, prosím.",
+   "en": "One beer for the cat, please.",
+   "emoji": "🐈🍺"
+  },
+  {
+   "cz": "Medvěd si dá kafe.",
+   "en": "The bear will have a coffee.",
+   "emoji": "🐻☕"
+  }
+ ],
+ "postcard": {
+  "emoji": "🍺",
+  "title": "Pencil marks on paper",
+  "text": "In a Czech pub the waiter keeps your tab as pencil lines on a slip of paper. Put your beer mat on top of the glass when you don't want another.",
+  "cz": "Ještě jedno, prosím.",
+  "en": "One more, please."
+ }
 }

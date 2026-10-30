@@ -96,5 +96,24 @@
   "cz": "Jsem z ___.",
   "en": "I'm from ___. Turecka, Istanbulu, Ankary."
  },
- "short": "About me"
+ "short": "About me",
+ "silly": [
+  {
+   "cz": "Jmenuji se Rohlík. Jsem z Turecka.",
+   "en": "My name is Roll. I'm from Turkey.",
+   "emoji": "🥖🇹🇷"
+  },
+  {
+   "cz": "Medvěd se učí česky.",
+   "en": "The bear is learning Czech.",
+   "emoji": "🐻📚"
+  }
+ ],
+ "postcard": {
+  "emoji": "📅",
+  "title": "Name days",
+  "text": "Every day on the Czech calendar belongs to a first name. On your name day (svátek), friends congratulate you.",
+  "cz": "Všechno nejlepší!",
+  "en": "All the best!"
+ }
 }

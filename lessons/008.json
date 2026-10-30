@@ -100,5 +100,24 @@
   "cz": "To je moje ___.",
   "en": "This is my ___. manželka, máma, dcera."
  },
- "short": "Family"
+ "short": "Family",
+ "silly": [
+  {
+   "cz": "Kočka má tři děti a jeden rohlík.",
+   "en": "The cat has three children and one roll.",
+   "emoji": "🐈👶🥖"
+  },
+  {
+   "cz": "Táta pije čaj, děti pijí kafe.",
+   "en": "Dad drinks tea, the kids drink coffee.",
+   "emoji": "👨🍵👧☕"
+  }
+ ],
+ "postcard": {
+  "emoji": "🐾",
+  "title": "Krtek in space",
+  "text": "Krtek, the little mole, is a Czech cartoon from 1956. A Krtek toy flew to the International Space Station in 2011.",
+  "cz": "Ahoj, Krtečku!",
+  "en": "Hi, little mole!"
+ }
 }

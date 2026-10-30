@@ -100,5 +100,24 @@
   "cz": "Zítra ___ ano / ne.",
   "en": "Tomorrow ___ yes / no. ráno, večer."
  },
- "short": "Time"
+ "short": "Time",
+ "silly": [
+  {
+   "cz": "Kolik je hodin? Čas na pivo.",
+   "en": "What time is it? Beer time.",
+   "emoji": "⏰🍺"
+  },
+  {
+   "cz": "Kočka pije kafe každé ráno.",
+   "en": "The cat drinks coffee every morning.",
+   "emoji": "🐈☕🌅"
+  }
+ ],
+ "postcard": {
+  "emoji": "🕝",
+  "title": "Half third",
+  "text": "Czechs say 2:30 as 'půl třetí', half of the third hour: they count toward the next hour.",
+  "cz": "půl třetí",
+  "en": "half past two"
+ }
 }

@@ -25,6 +25,14 @@ A 10-minute-a-day Czech course for a Turkish speaker living in Czechia.
   can set mode, focus skill/words and new-word cap.
 - **Level**: Unit n passed = Level n, labelled with its CEFR band (Pre-A1 → A1.2 → A2). An estimate, not an exam.
 
+## The fun layer (no stress mechanics)
+
+- **Knedlík**, a dumpling mascot, reacts to answers, cheers combos ("Tři v řadě!") and naps when you're done for the day.
+- **Silly sentences** (2 per lesson) star recurring characters: pan Medvěd (a bear who never has a tram ticket),
+  a cat, and a talking rohlík. They're translated with word tiles.
+- **Postcards**: each finished station gives a Czech culture card (fact + phrase with audio), collected in the Album tab.
+- **Speed round** (Practice): match pairs for 60 seconds and race only your own best.
+
 ## Where things live
 
 - `app/index.html`: the app page, published as a claude.ai artifact.
@@ -51,7 +59,9 @@ Lesson schema:
   "bridge": {"title": "…", "rows": [{"cz":"…","tr":"…","ex":"…","note":"…"}], "note": "…"},
   "words": [{"cz":"…","en":"…","tr":"…","emoji":"…","say":"optional pronunciation"}],
   "dialog": [{"who":"Ty|<role in Czech>","cz":"…","en":"…"}],
-  "pattern": {"cz":"…","en":"…"}
+  "pattern": {"cz":"…","en":"…"},
+  "silly": [{"cz":"Medvěd nemá jízdenku.","en":"The bear doesn't have a ticket.","emoji":"🐻🎫"}],
+  "postcard": {"emoji":"🏰","title":"…","text":"one true, surprising fact about Czechia","cz":"phrase","en":"meaning"}
 }
 ```
 `who: "Ty"` is the learner (shown as blue "You" bubbles).

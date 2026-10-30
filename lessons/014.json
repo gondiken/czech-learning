@@ -109,5 +109,24 @@
   "cz": "Dobře, děkuji. A vy?",
   "en": "The reply to every 'Jak se máte?'."
  },
- "short": "Small talk"
+ "short": "Small talk",
+ "silly": [
+  {
+   "cz": "Jak se máš, rohlíku?",
+   "en": "How are you, roll?",
+   "emoji": "🥖🙂"
+  },
+  {
+   "cz": "Dobře, děkuji. A vy, pane medvěde?",
+   "en": "Fine, thanks. And you, Mr Bear?",
+   "emoji": "🙂🐻"
+  }
+ ],
+ "postcard": {
+  "emoji": "🤖",
+  "title": "Robot is Czech",
+  "text": "The word robot comes from Karel Čapek's 1920 play R.U.R. His brother Josef suggested it, from 'robota': hard work.",
+  "cz": "robot",
+  "en": "robot"
+ }
 }

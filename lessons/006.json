@@ -94,5 +94,24 @@
   "cz": "Máte ___?",
   "en": "Do you have ___? Try: chleba, mléko, sýr."
  },
- "short": "Groceries"
+ "short": "Groceries",
+ "silly": [
+  {
+   "cz": "Kočka jí sýr a pije mléko.",
+   "en": "The cat eats cheese and drinks milk.",
+   "emoji": "🐈🧀🥛"
+  },
+  {
+   "cz": "Máte rohlík pro medvěda?",
+   "en": "Do you have a roll for the bear?",
+   "emoji": "🥖🐻"
+  }
+ ],
+ "postcard": {
+  "emoji": "🥖",
+  "title": "Rohlík nation",
+  "text": "The rohlík is the everyday Czech bread roll, so popular that a big grocery delivery company is named after it.",
+  "cz": "rohlík s máslem",
+  "en": "roll with butter"
+ }
 }

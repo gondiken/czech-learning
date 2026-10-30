@@ -117,5 +117,24 @@
  "pattern": {
   "cz": "Mám tady balík.",
   "en": "I have a parcel here. (to collect)"
+ },
+ "silly": [
+  {
+   "cz": "V balíku je medvěd.",
+   "en": "There's a bear in the parcel.",
+   "emoji": "📦🐻"
+  },
+  {
+   "cz": "Kód je sedm, sedm, sedm, sedm.",
+   "en": "The code is seven, seven, seven, seven.",
+   "emoji": "🔢"
+  }
+ ],
+ "postcard": {
+  "emoji": "🐟",
+  "title": "The @ sign is a herring",
+  "text": "Czechs call @ 'zavináč', a rolled pickled herring. So your email is jméno zavináč gmail tečka com.",
+  "cz": "zavináč",
+  "en": "rolled herring (@)"
  }
 }

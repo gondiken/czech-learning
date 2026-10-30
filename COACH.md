@@ -44,11 +44,12 @@ Rules of thumb:
 
 ## 5. Keep lessons ahead
 If fewer than 5 unfinished lessons remain, write the next 7 following `CURRICULUM.md` and the schema in `README.md`
-(include `unit`, `short`), recycling the most-missed words in dialogues; lean into the weakest skill
+(include `unit`, `short`, 2 `silly` sentences and a `postcard`), recycling the most-missed words in dialogues; lean into the weakest skill
 (listening weak → more dialogue lines; writing weak → more short, typeable words). Add a `units/<n>` doc for a new unit.
 Save with one ArtifactData `batch`, and commit copies to `lessons/NNN.json` on branch `ccr-0f6c4273-415msd`.
 Double-check every Czech and Turkish line.
 
 ## 6. Notification
-Finish with ONE short line (it becomes the phone notification), e.g.
+Finish with ONE short line (it becomes the phone notification). Make it fun: a pan Medvěd one-liner,
+today's Czech name day (svátek), or a tiny surprising fact. Never guilt. E.g.
 `🚋 Today: Station 9 · Prices (~10 min). Listening is your focus this week. https://claude.ai/artifact/49jET6PDeyUZhUw95zHbxX`

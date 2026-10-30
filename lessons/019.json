@@ -104,5 +104,24 @@
  "pattern": {
   "cz": "Můžu ___?",
   "en": "Can I ___? platit kartou, sednout si (sit down), otevřít okno (open the window)."
+ },
+ "silly": [
+  {
+   "cz": "Chtěl bych sto rohlíků.",
+   "en": "I'd like a hundred rolls.",
+   "emoji": "🥖💯"
+  },
+  {
+   "cz": "Můžu platit rohlíkem?",
+   "en": "Can I pay with a roll?",
+   "emoji": "🥖💳"
+  }
+ ],
+ "postcard": {
+  "emoji": "🧊",
+  "title": "The sugar cube",
+  "text": "The sugar cube was invented in the Czech town of Dačice in 1843, after a sugar factory director's wife cut her finger on a sugar loaf.",
+  "cz": "kostka cukru",
+  "en": "sugar cube"
  }
 }

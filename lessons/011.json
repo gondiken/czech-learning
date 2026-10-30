@@ -94,5 +94,24 @@
   "cz": "Jednu jízdenku, prosím.",
   "en": "One ticket, please. (jízdenka → jízdenku, like voda → vodu)"
  },
- "short": "Transport"
+ "short": "Transport",
+ "silly": [
+  {
+   "cz": "Medvěd nemá jízdenku.",
+   "en": "The bear doesn't have a ticket.",
+   "emoji": "🐻🎫"
+  },
+  {
+   "cz": "Příští zastávka: Rohlík.",
+   "en": "Next stop: Roll.",
+   "emoji": "🚋🥖"
+  }
+ ],
+ "postcard": {
+  "emoji": "🚋",
+  "title": "Tram city",
+  "text": "Prague has one of the largest tram networks in the world, with about 140 km of track. Ride line 22 for a free sightseeing tour.",
+  "cz": "Dveře se zavírají.",
+  "en": "The doors are closing."
+ }
 }

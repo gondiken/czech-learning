@@ -106,5 +106,24 @@
   "cz": "Bolí mě ___.",
   "en": "My ___ hurts. hlava, zub, záda (back)."
  },
- "short": "Pharmacy"
+ "short": "Pharmacy",
+ "silly": [
+  {
+   "cz": "Medvěda bolí hlava. Moc piva.",
+   "en": "The bear has a headache. Too much beer.",
+   "emoji": "🐻🤕🍺"
+  },
+  {
+   "cz": "Kočka má horečku a recept.",
+   "en": "The cat has a fever and a prescription.",
+   "emoji": "🐈🌡️📄"
+  }
+ ],
+ "postcard": {
+  "emoji": "👁️",
+  "title": "Contact lenses",
+  "text": "Soft contact lenses were invented by Czech chemist Otto Wichterle, who made early prototypes with a children's building set.",
+  "cz": "kontaktní čočky",
+  "en": "contact lenses"
+ }
 }

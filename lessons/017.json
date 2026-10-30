@@ -108,5 +108,24 @@
  "pattern": {
   "cz": "Nahoru, nebo dolů?",
   "en": "Up or down? Ask it in the lift."
+ },
+ "silly": [
+  {
+   "cz": "V našem výtahu bydlí medvěd.",
+   "en": "A bear lives in our lift.",
+   "emoji": "🛗🐻"
+  },
+  {
+   "cz": "Klíč je ve sklepě. A medvěd taky.",
+   "en": "The key is in the cellar. And the bear too.",
+   "emoji": "🔑🐻"
+  }
+ ],
+ "postcard": {
+  "emoji": "🏡",
+  "title": "Off to the chata",
+  "text": "Many Czech families have a weekend cottage, a chata or chalupa. On Friday afternoons the roads out of town fill up.",
+  "cz": "Jedeme na chatu.",
+  "en": "We're going to the cottage."
  }
 }

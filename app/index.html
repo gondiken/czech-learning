@@ -58,7 +58,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 /* tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);display:flex;justify-content:center;
   padding:6px max(16px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
-.tabs div{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:100%;max-width:560px}
+.tabs div{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;width:100%;max-width:560px}
 .tab{display:flex;flex-direction:column;align-items:center;gap:0;padding:6px;border-radius:12px;font-size:.78rem;font-weight:700;color:var(--muted)}
 .tab span{font-size:1.3rem;line-height:1.2}
 .tab[aria-current="page"]{color:var(--accent);background:var(--soft)}
@@ -186,6 +186,29 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .case .mean{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
 .case button{text-align:left;font-weight:700;color:var(--accent)}
 .case small{color:var(--muted)}
+.kned{display:block;flex:none;overflow:visible;transform-origin:50% 90%;animation:wob 3.2s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg) translateY(-2px)}}
+.mascot{display:flex;align-items:flex-end;gap:10px}
+.speech{position:relative;background:var(--surface);color:var(--ink);border:2px solid var(--line);border-radius:16px;padding:8px 12px;font-size:.95rem;font-weight:700;line-height:1.35}
+.speech::before{content:"";position:absolute;left:-9px;bottom:14px;width:14px;height:14px;background:var(--surface);border-left:2px solid var(--line);border-bottom:2px solid var(--line);transform:rotate(45deg)}
+.speech small{display:block;font-weight:400;color:var(--muted)}
+.lfoot .fbrow{display:flex;align-items:center;gap:10px}
+.combo{display:inline-block;margin-top:2px;font-weight:700;color:var(--gold)}
+.silly{font-size:3.6rem;text-align:center;letter-spacing:.1em;background:var(--bg);border-radius:20px;padding:14px}
+.postcard{width:100%;max-width:340px;border-radius:18px;background:var(--surface);border:2px solid var(--line);box-shadow:0 6px 0 var(--line);overflow:hidden;text-align:left;animation:pop .5s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:scale(.6) rotate(-6deg);opacity:0}to{transform:none;opacity:1}}
+.postcard .pc-top{background:repeating-linear-gradient(45deg,var(--accent) 0 10px,var(--surface) 10px 20px,var(--blue) 20px 30px,var(--surface) 30px 40px);padding:6px}
+.postcard .pc-art{background:var(--bg);border-radius:12px;font-size:3.4rem;text-align:center;padding:10px}
+.postcard .pc-body{padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.postcard .pc-stamp{float:right;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;border:2px dashed var(--muted);color:var(--muted);border-radius:6px;padding:2px 6px;margin-left:8px}
+.album{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.slot{aspect-ratio:3/4;border-radius:14px;border:2px solid var(--line);background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:6px;text-align:center;font-size:.72rem;font-weight:700;max-width:100%}
+.slot .e{font-size:2rem}
+.slot.locked{background:var(--soft);color:var(--muted);border-style:dashed}
+.timer{flex:1;height:14px;border-radius:7px;background:var(--soft);overflow:hidden}
+.timer i{display:block;height:100%;background:var(--gold);border-radius:7px}
+.score{font-family:var(--display);font-weight:800;font-size:1.4rem;font-variant-numeric:tabular-nums;min-width:40px;text-align:right}
+@media (prefers-reduced-motion: reduce){.kned,.postcard{animation:none}}
 .empty{text-align:center;padding:28px 12px;display:flex;flex-direction:column;gap:10px;align-items:center}
 .warn{font-size:.85rem;background:color-mix(in srgb,var(--gold) 18%,var(--surface));border-radius:12px;padding:10px 12px}
 @media (prefers-reduced-motion: reduce){.bubble{animation:none}.pbar i{transition:none}}
@@ -209,6 +232,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 <nav class="tabs" aria-label="Sections"><div>
   <button class="tab" data-tab="path" aria-current="page"><span>🛤️</span>Path</button>
   <button class="tab" data-tab="practice"><span>🎯</span>Practice</button>
+  <button class="tab" data-tab="album"><span>📮</span>Album</button>
   <button class="tab" data-tab="progress"><span>📈</span>Progress</button>
 </div></nav>
 
@@ -267,10 +291,33 @@ function chime(good){try{actx=actx||new (window.AudioContext||window.webkitAudio
     g.gain.setValueAtTime(0.0001,t+i*.09);g.gain.exponentialRampToValueAtTime(.12,t+i*.09+.02);g.gain.exponentialRampToValueAtTime(.0001,t+i*.09+(good?.25:.35));
     o.connect(g).connect(actx.destination);o.start(t+i*.09);o.stop(t+i*.09+.4)})}catch(e){}}
 
+/* ================= Knedlík, the mascot ================= */
+function kned(mood="happy",size=64){
+  const eyes={happy:'<circle cx="37" cy="52" r="5" fill="#2b2118"/><circle cx="63" cy="52" r="5" fill="#2b2118"/><circle cx="39" cy="50" r="1.6" fill="#fff"/><circle cx="65" cy="50" r="1.6" fill="#fff"/>',
+    wow:'<circle cx="37" cy="50" r="7" fill="#fff" stroke="#2b2118" stroke-width="3"/><circle cx="63" cy="50" r="7" fill="#fff" stroke="#2b2118" stroke-width="3"/><circle cx="37" cy="51" r="3" fill="#2b2118"/><circle cx="63" cy="51" r="3" fill="#2b2118"/>',
+    think:'<circle cx="38" cy="49" r="4.5" fill="#2b2118"/><circle cx="64" cy="49" r="4.5" fill="#2b2118"/><path d="M30 40 l12 -3 M58 37 l12 3" stroke="#2b2118" stroke-width="3" stroke-linecap="round"/>',
+    party:'<path d="M31 53 q6 -8 12 0 M57 53 q6 -8 12 0" stroke="#2b2118" stroke-width="4" fill="none" stroke-linecap="round"/>',
+    sleep:'<path d="M31 53 q6 4 12 0 M57 53 q6 4 12 0" stroke="#2b2118" stroke-width="3.5" fill="none" stroke-linecap="round"/>'}[mood]||"";
+  const mouth={happy:'<path d="M42 64 q8 8 16 0" stroke="#2b2118" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
+    wow:'<ellipse cx="50" cy="68" rx="5" ry="6" fill="#7a2b2b"/>',think:'<path d="M43 67 h12" stroke="#2b2118" stroke-width="3.5" stroke-linecap="round"/>',
+    party:'<path d="M40 62 q10 14 20 0 z" fill="#7a2b2b" stroke="#2b2118" stroke-width="3" stroke-linejoin="round"/>',
+    sleep:'<ellipse cx="50" cy="67" rx="3.5" ry="2.5" fill="#7a2b2b"/>'}[mood]||"";
+  const extra=mood==="party"?'<path d="M36 22 L50 -8 L64 22 Z" fill="#c8202b" stroke="#2b2118" stroke-width="2.5" stroke-linejoin="round"/><circle cx="50" cy="-9" r="5" fill="#f2b800"/>'
+    :mood==="sleep"?'<text x="78" y="22" font-size="16" font-weight="800" fill="#11457e">z</text><text x="88" y="8" font-size="12" font-weight="800" fill="#11457e">z</text>'
+    :mood==="think"?'<text x="80" y="18" font-size="22" font-weight="800" fill="#11457e">?</text>':"";
+  return `<svg class="kned" width="${size}" height="${size}" viewBox="0 -14 100 114" aria-hidden="true">${extra}
+    <ellipse cx="50" cy="94" rx="34" ry="5" fill="#000" opacity=".12"/>
+    <path d="M10 62 Q8 24 50 22 Q92 24 90 62 Q90 92 50 92 Q10 92 10 62 Z" fill="#f4e4bd" stroke="#b98f4f" stroke-width="3"/>
+    <path d="M22 36 Q50 28 78 36 M15 78 Q50 86 85 78" stroke="#dcc48d" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="26" cy="64" r="6" fill="#f2a7a0" opacity=".7"/><circle cx="74" cy="64" r="6" fill="#f2a7a0" opacity=".7"/>${eyes}${mouth}</svg>`}
+function sayLine(cz,en,mood="happy",size=56){return `<div class="mascot">${kned(mood,size)}<div class="speech">${esc(cz)}${en?`<small>${esc(en)}</small>`:""}</div></div>`}
+const PRAISE=[["Správně!","Correct!"],["Výborně!","Excellent!"],["Super!","Super!"],["Přesně tak!","Exactly!"],["Bezva!","Great!"],["Paráda!","Awesome!"],["To je ono!","That's it!"]];
+const COMBO={3:["Tři v řadě!","3 in a row"],5:["Pět v řadě!","5 in a row"],8:["Osm v řadě!","8 in a row"],12:["Dvanáct v řadě!","12 in a row. Pan Medvěd is impressed."],16:["Šestnáct!","16 in a row. Legendary."]};
+
 /* ================= state ================= */
 let db=null, lessons=[], units={}, plan=null, report=null;
 let P=null;
-const blank=()=>({v:2,goal:30,placement:null,done:{},units:{},cards:{},days:{},skill:{vocab:[],listening:[],reading:[],writing:[],grammar:[]},history:{},lastSession:null,totalXp:0});
+const blank=()=>({v:2,goal:30,placement:null,done:{},units:{},cards:{},days:{},skill:{vocab:[],listening:[],reading:[],writing:[],grammar:[]},history:{},lastSession:null,totalXp:0,postcards:{},best:{}});
 async function save(){if(!db)return;try{await db.doc("progress/main").set(clone(P))}catch(e){console.warn(e);flashWarn("Couldn't save just now. Your progress will save again after the next exercise set.")}}
 function flashWarn(t){const w=$("#voiceWarn");w.hidden=false;w.textContent=t}
 
@@ -312,6 +359,7 @@ const nextLesson=()=>lessons.find(l=>!P.done[l.n])||null;
 function nextNode(){for(const u of unitList()){for(const l of u.lessons)if(!P.done[l.n])return {kind:"lesson",l,u};if(!unitPassed(u.n))return {kind:"checkpoint",u}}return null}
 function wordsUpTo(n){return lessons.filter(l=>l.n<=n).flatMap(l=>l.words.map(w=>({...w,n:l.n})))}
 function learnedWords(){const all=lessons.flatMap(l=>l.words.map(w=>({...w,n:l.n})));return all.filter(w=>P.cards[w.cz])}
+function sillyPool(n){return lessons.filter(l=>l.n<=n).flatMap(l=>[...(l.silly||[]),...(l.dialog||[])]).filter(x=>!/[()]/.test(x.en))}
 function sentencesOf(ls){return ls.flatMap(l=>(l.dialog||[]).map(d=>({...d,n:l.n}))).filter(s=>!/^\(|…|___|-/.test(s.cz)&&!/[()]/.test(s.en)&&norm(s.cz).split(" ").length>=2&&norm(s.cz).split(" ").length<=8)}
 
 /* ================= exercise generators ================= */
@@ -345,16 +393,19 @@ function buildLesson(L){const pool=wordsUpTo(L.n);const q=[];const newCap=plan?.
   ws.forEach((w,i)=>{q.push({type:"teach",w,L});q.push(exForWord(w,pool));if(i%2===1&&i>0)q.push({type:pick(["listenPick","pickCz"]),w:ws[i-1],pool})});
   if(ws.length>=4)q.push({type:"match",ws:shuffle(ws).slice(0,5)});
   q.push({type:"scene",L});
+  (L.silly||[]).slice(0,1).forEach(s=>q.push({type:"silly",s,sentPool:sillyPool(L.n)}));
   const sp=sentencesOf(lessons.filter(l=>l.n<=L.n)), own=shuffle(sentencesOf([L]));
   const kinds=shuffle(["tilesToEn","tilesToCz","listenTiles","fillGap"]);
   own.slice(0,3).forEach((s,i)=>q.push(sentenceEx(s,pool,sp,kinds[i])));
   shuffle(ws.filter(typeable)).slice(0,2).forEach(w=>q.push({type:pick(["typeCz","listenType"]),w,pool}));
+  (L.silly||[]).slice(1,2).forEach(s=>q.push({type:"silly",s,sentPool:sillyPool(L.n)}));
   return {mode:"lesson",L,title:`Station ${L.n} · ${L.title}`,q}}
 function buildReview(focusSkill){const pool=learnedWords();const q=[];const due=dueWords(10);const ws=due.length?due:shuffle(pool).slice(0,8);
   ws.forEach(w=>{const e=exForWord(w,pool);if(focusSkill==="listening")e.type=typeable(w)&&Math.random()<.5?"listenType":"listenPick";q.push(e)});
   const doneLs=lessons.filter(l=>P.done[l.n]);const sp=sentencesOf(doneLs);
   shuffle(sp).slice(0,4).forEach(s=>q.push(sentenceEx(s,pool,sp,focusSkill==="listening"?"listenTiles":undefined)));
   if(ws.length>=4)q.splice(3,0,{type:"match",ws:shuffle(ws).slice(0,5)});
+  const sl=shuffle(doneLs.flatMap(l=>l.silly||[]));if(sl.length)q.push({type:"silly",s:sl[0],sentPool:sillyPool(99)});
   return {mode:"review",title:focusSkill==="listening"?"Listening practice":"Strengthen shaky words",q:shuffle(q.slice(0,4)).concat(q.slice(4))}}
 function buildCheckpoint(u){const ls=u.lessons;const pool=wordsUpTo(Math.max(...ls.map(l=>l.n)));const uw=shuffle(ls.flatMap(l=>l.words.map(w=>({...w,n:l.n}))));
   const q=[];uw.slice(0,9).forEach(w=>q.push(exForWord(w,pool,{hard:Math.random()<.5})));
@@ -371,7 +422,7 @@ let S=null;
 function start(sess){S={...sess,i:0,total:sess.q.length,log:[],retried:new Set(),t0:Date.now(),xp:0,firstRight:0,firstTotal:0};
   $("#lesson").hidden=false;document.body.style.overflow="hidden";render()}
 $("#lClose").onclick=()=>{if(S&&S.i>0&&!S.closing){S.closing=true;foot(`<div class="fb"><b style="color:var(--ink)">Leave this lesson?</b><span class="muted">Progress in this lesson won't be saved.</span></div><button class="btn ghost" id="stay">Keep going</button><button class="btn" id="leave">Leave</button>`);$("#stay").onclick=()=>{S.closing=false;render()};$("#leave").onclick=close;return}close()};
-function close(){window.speechSynthesis?.cancel?.();$("#lesson").hidden=true;document.body.style.overflow="";S=null;renderView()}
+function close(){window.speechSynthesis?.cancel?.();if(S?.timer)clearInterval(S.timer);if($("#tBar")){$("#tBar").outerHTML=`<div class="pbar"><i id="lBar" style="width:0"></i></div>`;$("#tScore")?.remove()}$("#lesson").hidden=true;document.body.style.overflow="";S=null;renderView()}
 function body(h){$("#lBody").firstElementChild.innerHTML=h}
 function foot(h,cls=""){const f=$("#lFoot");f.className="lfoot "+cls;f.firstElementChild.innerHTML=h}
 function bar(){$("#lBar").style.width=Math.round(100*Math.min(S.i,S.total)/S.total)+"%"}
@@ -379,7 +430,7 @@ const sayBtn=(t,cls="")=>`<button class="say ${cls}" data-speak="${esc(t)}" aria
 function wireSpeak(){document.querySelectorAll("#lesson [data-speak]").forEach(b=>b.onclick=()=>speak(b.dataset.speak,b.dataset.slow?0.6:0.9))}
 
 function render(){bar();if(S.i>=S.q.length)return finish();const e=S.q[S.i];S.closing=false;S.shownAt=Date.now();
-  const R={teach,bridge,scene,pickPicture:choice,pickMeaning:choice,pickCz:choice,listenPick:choice,typeCz:typing,listenType:typing,match,tilesToCz:tiles,tilesToEn:tiles,listenTiles:tiles,fillGap};
+  const R={teach,bridge,scene,pickPicture:choice,pickMeaning:choice,pickCz:choice,listenPick:choice,typeCz:typing,listenType:typing,match,tilesToCz:tiles,tilesToEn:tiles,listenTiles:tiles,silly:tiles,fillGap};
   (R[e.type]||(()=>{S.i++;render()}))(e);wireSpeak()}
 function cont(label="Continue"){foot(`<button class="btn" id="go">${label}</button>`);$("#go").onclick=()=>{S.i++;render()}}
 
@@ -446,9 +497,10 @@ function match(e){const ws=e.ws;const L=shuffle(ws.map((w,i)=>({i,t:w.cz}))),R=s
   document.querySelectorAll("#lesson [data-r]").forEach(b=>b.onclick=()=>{document.querySelectorAll("#lesson [data-r]").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");selR=+b.dataset.r;tryPair()})}
 
 /* scored: word tiles */
-function tiles(e){const s=e.s;const toCz=e.type!=="tilesToEn";const target=toCz?s.cz:s.en;const key=toCz?"cz":"en";
+function tiles(e){const s=e.s;const toCz=e.type!=="tilesToEn"&&e.type!=="silly";const target=toCz?s.cz:s.en;const key=toCz?"cz":"en";
   if(!e.bank)e.bank=tilesFor(target,e.sentPool||[s],key);const bank=e.bank;let ans=[];
-  const head=e.type==="tilesToCz"?`<p class="extitle">Write this in Czech</p><div class="card" style="background:var(--bg);border:0;font-size:1.15rem;font-weight:700">${esc(s.en)}</div>`
+  const head=e.type==="silly"?`<p class="eyebrow">🤪 Silly sentence</p><div class="silly" aria-hidden="true">${s.emoji||"🐻"}</div><div class="prompt">${sayBtn(s.cz)}<span style="font-weight:700;font-size:1.2rem">${esc(s.cz)}</span></div><p class="extitle" style="font-size:1.05rem">What does it say?</p>`
+    :e.type==="tilesToCz"?`<p class="extitle">Write this in Czech</p><div class="card" style="background:var(--bg);border:0;font-size:1.15rem;font-weight:700">${esc(s.en)}</div>`
     :e.type==="tilesToEn"?`<p class="extitle">Translate this sentence</p><div class="prompt">${sayBtn(s.cz)}<span style="font-weight:700;font-size:1.2rem">${esc(s.cz)}</span></div>`
     :`<p class="extitle">Tap what you hear</p><div class="prompt" style="justify-content:center"><button class="say saybig" data-speak="${esc(s.cz)}" aria-label="Play">🔊</button><button class="say slow" data-speak="${esc(s.cz)}" data-slow="1" aria-label="Play slowly">🐢</button></div>`;
   const draw=()=>{body(`${head}<div class="answer" id="ans">${ans.map((ti,k)=>`<button class="tile" data-a="${k}">${esc(bank[ti])}</button>`).join("")}</div>
@@ -460,7 +512,7 @@ function tiles(e){const s=e.s;const toCz=e.type!=="tilesToEn";const target=toCz?
   foot(`<button class="btn" id="chk" disabled>Check</button>`);
   $("#chk").onclick=()=>{const got=ans.map(i=>bank[i]).join(" ");const ok=norm(got)===norm(target)||strip(norm(got))===strip(norm(target));
     document.querySelectorAll("#lesson [data-a],[data-b]").forEach(x=>x.disabled=true);
-    judge(e,ok,{word:null,sent:s.cz,skill:e.type==="listenTiles"?"listening":e.type==="tilesToEn"?"reading":"writing",production:toCz,answer:`${s.cz}<br><span class="muted">${esc(s.en)}</span>`,answerHtml:true})}}
+    judge(e,ok,{word:null,sent:s.cz,skill:e.type==="listenTiles"?"listening":(e.type==="tilesToEn"||e.type==="silly")?"reading":"writing",production:toCz,answer:`${s.cz}<br><span class="muted">${esc(s.en)}</span>`,answerHtml:true})}}
 
 /* scored: fill the gap */
 function fillGap(e){const s=e.s;const toks=s.cz.replace(/[.,!?]/g,m=>" "+m).split(/\s+/).filter(Boolean);let wi=-1;const nt=norm(s.cz).split(" ");
@@ -479,9 +531,11 @@ function logAnswer(e,ok,info){const first=!e.retry;S.log.push({ex:e.type,skill:i
   else if(ok)S.xp+=0}
 function judge(e,ok,info){logAnswer(e,ok,info);chime(ok);
   if(!ok&&!S.noRetry&&!e.retry){S.q.push({...e,retry:true,opts:e.opts,bank:e.bank});S.total++}
-  const praise=pick(["Správně!","Výborně!","Super!","Přesně tak!","Bezva!"]);
-  if(ok)foot(`<div class="fb"><b>✓ ${praise}</b>${info.note?`<span>${info.note}</span>`:""}</div><button class="btn ok" id="go">Continue</button>`,"good");
-  else foot(`<div class="fb"><b>Not quite</b><span>Correct answer: ${info.answerHtml?info.answer:esc(info.answer)}</span>${S.noRetry?"":`<span class="muted" style="font-size:.85rem">It'll come back at the end.</span>`}</div><button class="btn" id="go">Continue</button>`,"bad");
+  const [pz,pe]=pick(PRAISE);
+  if(!e.retry){S.combo=ok?(S.combo||0)+1:0;S.bestCombo=Math.max(S.bestCombo||0,S.combo)}
+  const cb=ok&&COMBO[S.combo]?`<span class="combo">🔥 ${COMBO[S.combo][0]} <span class="muted">${COMBO[S.combo][1]}</span></span>`:"";
+  if(ok)foot(`<div class="fbrow">${kned(cb?"party":"happy",48)}<div class="fb"><b>${pz}</b><span class="muted" style="font-size:.85rem">${pe}</span>${cb}${info.note?`<span>${info.note}</span>`:""}</div></div><button class="btn ok" id="go">Continue</button>`,"good");
+  else foot(`<div class="fbrow">${kned("think",48)}<div class="fb"><b>${pick(["Nevadí!","Skoro!","Ještě ne!"])} <span class="muted" style="font-size:.85rem;font-family:var(--body);font-weight:400">${pick(["no problem","almost","not yet"])}</span></b><span>Correct answer: ${info.answerHtml?info.answer:esc(info.answer)}</span>${S.noRetry?"":`<span class="muted" style="font-size:.85rem">It'll come back at the end.</span>`}</div></div><button class="btn" id="go">Continue</button>`,"bad");
   $("#go").onclick=()=>{S.i++;if(S.mode==="placement")return placementStep();render()}}
 
 /* placement: one unit at a time, stop at the first unit under 80% */
@@ -489,16 +543,39 @@ function placementStep(){if(S.i<S.q.length)return render();const u=S.units[S.ui]
   if(sc>=0.8&&S.ui+1<S.units.length){S.ui++;const nq=placementUnitQs(S.units[S.ui]);S.q.push(...nq);S.total=S.q.length;return render()}
   finish()}
 
+/* ================= speed round ================= */
+function startSpeed(){const pool=shuffle(learnedWords().filter(w=>w.en.length<28));if(pool.length<8)return;
+  S={mode:"speed",q:[],i:0,total:1,log:[],t0:Date.now(),xp:0,firstRight:0,firstTotal:0,score:0,miss:0,pool,pi:0,slots:[],rightOrder:[]};
+  for(let k=0;k<4;k++)S.slots.push(S.pool[S.pi++%S.pool.length]);S.rightOrder=shuffle([0,1,2,3]);
+  $("#lesson").hidden=false;document.body.style.overflow="hidden";
+  $("#lBar").parentElement.outerHTML=`<div class="timer" id="tBar"><i style="width:100%"></i></div><span class="score" id="tScore">0</span>`;
+  const end=Date.now()+60000;S.timer=setInterval(()=>{const left=Math.max(0,end-Date.now());$("#tBar i").style.width=(left/600)+"%";if(!left){clearInterval(S.timer);S.timer=null;speedEnd()}},150);
+  foot(`<p class="muted" style="text-align:center">Tap a Czech word, then its meaning</p>`);speedDraw()}
+function speedDraw(){let sl=null,sr=null;
+  body(`<p class="extitle">⚡ Match fast</p><div class="pairs"><div class="col">${S.slots.map((w,k)=>`<button class="opt" data-sl="${k}">${esc(display1(w.cz))}</button>`).join("")}</div><div class="col">${S.rightOrder.map(k=>`<button class="opt" data-sr="${k}" style="font-weight:400">${esc(S.slots[k].en)}</button>`).join("")}</div></div>`);
+  const tryIt=()=>{if(sl===null||sr===null)return;const a=document.querySelector(`[data-sl="${sl}"]`),b=document.querySelector(`[data-sr="${sr}"]`);
+    if(sl===sr){S.score++;chime(true);$("#tScore").textContent=S.score;let nw,guard=0;do{nw=S.pool[S.pi++%S.pool.length]}while(S.slots.some(x=>x.cz===nw.cz)&&guard++<20);S.slots[sl]=nw;speedDraw()}
+    else{S.miss++;chime(false);a.classList.add("wrong");b.classList.add("wrong");setTimeout(()=>{a.classList.remove("wrong");b.classList.remove("wrong")},350);a.setAttribute("aria-pressed","false");b.setAttribute("aria-pressed","false");sl=sr=null}};
+  document.querySelectorAll("[data-sl]").forEach(b=>b.onclick=()=>{if(!S||!S.timer)return;document.querySelectorAll("[data-sl]").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");sl=+b.dataset.sl;tryIt()});
+  document.querySelectorAll("[data-sr]").forEach(b=>b.onclick=()=>{if(!S||!S.timer)return;document.querySelectorAll("[data-sr]").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");sr=+b.dataset.sr;tryIt()})}
+function speedEnd(){const d=today(),rec=dayRec(d),wasMet=met(d);P.best=P.best||{};const prev=P.best.speed||0,rec2=S.score>prev;if(rec2)P.best.speed=S.score;
+  S.xp=Math.floor(S.score/2);rec.xp+=S.xp;P.totalXp=(P.totalXp||0)+S.xp;P.history[d]={learned:Object.keys(P.cards).length,strong:strong(),xp:rec.xp};save();
+  body(`<div class="endscreen" style="display:flex;flex-direction:column;gap:16px">${kned(rec2?"party":"happy",96)}<h2>${S.score} pairs in 60 seconds</h2>
+    <p>${rec2?(prev?`New personal best! (was ${prev})`:"Your first score. Now you have something to beat.")+" "+pick(["Paráda!","Bezva!"]):`Your best is ${prev}. ${S.score>=prev-2?"So close!":"Warm-up round. Next time."}`}</p>
+    <div class="stats3"><div class="stat"><b>+${S.xp}</b><span>XP</span></div><div class="stat"><b>${S.score}</b><span>pairs</span></div><div class="stat"><b>${S.miss}</b><span>misses</span></div></div>${met(d)&&!wasMet?"<p>🎯 Daily goal reached!</p>":""}</div>`);
+  foot(`<button class="btn" id="go">Done</button>`);$("#go").onclick=close}
+
 /* ================= finish ================= */
 function finish(){const d=today(),rec=dayRec(d),wasMet=met(d);const acc=S.firstTotal?S.firstRight/S.firstTotal:1;const mins=Math.max(1,Math.round((Date.now()-S.t0)/60000));
   let headline="",extra="";
-  if(S.mode==="lesson"){P.done[S.L.n]={date:d,acc:+acc.toFixed(2)};S.xp+=10;headline=`Station ${S.L.n} complete`}
+  let newCard=null;P.postcards=P.postcards||{};
+  if(S.mode==="lesson"){P.done[S.L.n]={date:d,acc:+acc.toFixed(2)};S.xp+=10;headline=`Station ${S.L.n} complete`;if(S.L.postcard&&!P.postcards[S.L.n]){P.postcards[S.L.n]=d;newCard=S.L}}
   if(S.mode==="review"){S.xp+=5;headline="Practice complete"}
   if(S.mode==="checkpoint"){const pass=acc>=0.8;P.units[S.u.n]={passed:pass||unitPassed(S.u.n),date:d,score:+acc.toFixed(2)};S.xp+=pass?20:5;
     headline=pass?`Unit ${S.u.n} passed!`:`Unit ${S.u.n}: not yet`;
     extra=pass?`<p>You've reached <b>Level ${S.u.n}</b> (${esc(S.u.cefr)}). You can: ${esc(S.u.can)}</p>`:`<p>You need 80% (you got ${Math.round(acc*100)}%). Tomorrow's session will focus on the words you missed. Try the checkpoint again any time.</p>`}
   if(S.mode==="placement"){const passedUnits=S.uScore.filter(x=>x.sc>=0.8).map(x=>x.u);const now=Date.now();
-    for(const un of passedUnits){P.units[un]={passed:true,date:d,score:1,placement:true};for(const l of lessons.filter(l=>unitOf(l)===un)){P.done[l.n]={date:d,acc:1,tested:true};
+    for(const un of passedUnits){P.units[un]={passed:true,date:d,score:1,placement:true};for(const l of lessons.filter(l=>unitOf(l)===un)){P.done[l.n]={date:d,acc:1,tested:true};if(l.postcard&&!P.postcards[l.n])P.postcards[l.n]=d;
       for(const w of l.words){const c=card(w.cz);c.h=3;c.stage=2;c.last=now}}}
     for(const x of S.log)if(!x.ok&&P.cards[x.item]){P.cards[x.item].h=0.5;P.cards[x.item].stage=1}
     P.placement={date:d,result:S.uScore,startUnit:(passedUnits.length?Math.max(...passedUnits)+1:1),self:"Survival bits"};
@@ -514,11 +591,15 @@ function finish(){const d=today(),rec=dayRec(d),wasMet=met(d);const acc=S.firstT
   const nowMet=met(d);
   bar();$("#lBar").style.width="100%";
   body(`<div class="endscreen" style="display:flex;flex-direction:column;gap:16px">
-    <div style="font-size:3.4rem">${S.mode==="checkpoint"&&acc<0.8?"🧭":S.mode==="placement"?"🗺️":"🎉"}</div><h2>${headline}</h2>${extra}
+    ${kned(S.mode==="checkpoint"&&acc<0.8?"think":"party",96)}<h2>${headline}</h2>${extra}
+    ${newCard?`<p class="eyebrow">📮 New postcard for your album</p>${postcard(newCard.postcard,newCard.n)}`:""}
+    ${S.bestCombo>=5?`<p>🔥 Best combo: <b>${S.bestCombo} in a row</b></p>`:""}
     <div class="stats3"><div class="stat"><b>+${S.xp}</b><span>XP</span></div><div class="stat"><b>${Math.round(acc*100)}%</b><span>accuracy</span></div><div class="stat"><b>${mins}</b><span>min</span></div></div>
     ${weekDots()}
     <p>${nowMet?(wasMet?"Daily goal already reached. Nice extra practice.":"🎯 Daily goal reached. That's today's Czech done. See you tomorrow!"):`${rec.xp}/${P.goal} XP today. ${P.goal-rec.xp} more to reach your goal.`}</p></div>`);
-  foot(`<button class="btn" id="go">${nowMet?"Done":"Continue"}</button>`);$("#go").onclick=close}
+  wireSpeak();foot(`<button class="btn" id="go">${nowMet?"Done":"Continue"}</button>`);$("#go").onclick=close}
+function postcard(c,n){return `<div class="postcard"><div class="pc-top"><div class="pc-art">${c.emoji}</div></div><div class="pc-body"><span class="pc-stamp">Station ${n}</span><h3>${esc(c.title)}</h3><p style="font-size:.92rem">${esc(c.text)}</p>
+  <button style="text-align:left;font-weight:700;color:var(--accent)" data-speak="${esc(c.cz)}">🔊 ${esc(c.cz)} <span class="muted" style="font-weight:400">· ${esc(c.en)}</span></button></div></div>`}
 function weekDots(){const t=today();const dow=(new Date(t+"T12:00:00Z").getUTCDay()+6)%7;const rest=streakInfo().rest;let h="";
   ["Mo","Tu","We","Th","Fr","Sa","Su"].forEach((n,i)=>{const d=addDays(t,i-dow);h+=`<span class="${met(d)?"on":rest.has(d)?"rest":""} ${d===t?"today":""}" title="${d}${rest.has(d)?" · rest day":""}">${rest.has(d)?"☾":n}</span>`});
   return `<div class="week" aria-label="This week">${h}</div>`}
@@ -543,14 +624,25 @@ let tab="path";
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{tab=b.dataset.tab;document.querySelectorAll(".tab").forEach(x=>x.removeAttribute("aria-current"));b.setAttribute("aria-current","page");renderView();window.scrollTo({top:0})});
 function renderTop(){const s=streak(),xp=P.days[today()]?.xp||0;$("#cStreak").textContent=s;$("#cXp").textContent=xp;
   $("#ringArc").setAttribute("stroke-dasharray",`${Math.min(1,xp/P.goal)*88} 88`);$("#cLvl").textContent="Lv "+levelInfo().lv}
-function renderView(){renderTop();({path:viewPath,practice:viewPractice,progress:viewProgress})[tab]()}
+function renderView(){renderTop();({path:viewPath,practice:viewPractice,album:viewAlbum,progress:viewProgress})[tab]()}
+function viewAlbum(){const got=P.postcards||{};const n=Object.keys(got).length;
+  $("#view").innerHTML=`<section class="card">${sayLine(n?`Máš ${n} ${n===1?"pohlednici":n<5?"pohlednice":"pohlednic"}!`:"Prázdné album.",n?`You have ${n} postcard${n===1?"":"s"} from ${lessons.length} stations.`:"Finish a station to get your first postcard: a Czech story you can tell at the pub.",n?"happy":"think")}</section>
+   <section class="album">${lessons.filter(l=>l.postcard).map(l=>got[l.n]?`<button class="slot" data-pc="${l.n}"><span class="e">${l.postcard.emoji}</span>${esc(l.postcard.title)}</button>`:`<div class="slot locked"><span class="e">?</span>Station ${l.n}</div>`).join("")}</section>
+   <div id="pcView"></div>`;
+  document.querySelectorAll("[data-pc]").forEach(b=>b.onclick=()=>{const l=lessonByN(+b.dataset.pc);$("#pcView").innerHTML=`<div style="display:flex;justify-content:center">${postcard(l.postcard,l.n)}</div>`;
+    document.querySelectorAll("#pcView [data-speak]").forEach(x=>x.onclick=()=>speak(x.dataset.speak));$("#pcView").scrollIntoView({behavior:"smooth",block:"center"})})}
 
+const MASCOT_LINES={
+ placement:[["Ahoj! Já jsem Knedlík.","Hi! I'm Knedlík, the dumpling. Let's see what you already know.","wow"]],
+ lesson:[["Ahoj! Deset minut?","Hi! Ten minutes?","happy"],["Pan Medvěd zase nemá jízdenku.","Mr Bear has no tram ticket again.","think"],["Jdeme na to!","Let's do this!","happy"],["Dneska nová slova!","New words today!","wow"],["Káva, čaj, nebo čeština?","Coffee, tea, or Czech?","happy"]],
+ review:[["Opakování je matka moudrosti.","Repetition is the mother of wisdom. (Czech proverb)","think"],["Pár slov se nám schovává.","A few words are hiding from us.","think"]],
+ checkpoint:[["Velký test! Ty to dáš.","Big test! You've got this.","wow"]]};
 function viewPath(){const tp=todayPlan(),xp=P.days[today()]?.xp||0,done=xp>=P.goal;const nn=nextNode();
   const coachNote=plan?.note&&plan.date===today()?plan.note:null;
   let h=`<section class="card today"><p class="eyebrow">${done?"Today · goal reached":"Today · about 10 minutes"}</p><h2 style="color:var(--surface)">${done?"Done for today 🌙":esc(tp.title)}</h2>
     <p>${done?"Rest is part of learning. Extra practice is optional.":esc(tp.why)}</p>
     <div class="goalbar" aria-label="Daily goal"><i style="width:${Math.min(100,xp/P.goal*100)}%"></i></div><p style="font-size:.85rem">${xp}/${P.goal} XP</p>
-    ${coachNote?`<div class="coach"><div class="av">K</div><p>${esc(coachNote)}</p></div>`:""}
+    ${coachNote?sayLine(coachNote,"",done?"sleep":"happy"):done?sayLine("Hotovo! Jdu si zdřímnout.","Done! I'm off for a nap.","sleep"):sayLine(...pick(MASCOT_LINES[tp.kind]||MASCOT_LINES.lesson))}
     <button class="btn" id="todayBtn">${done?"Optional practice":esc(tp.btn)}</button></section>`;
   const offs=[0,44,64,44,0,-44,-64,-44];
   unitList().forEach((u,ui)=>{const col=UNIT_COLORS[(u.n-1)%5],sh=UNIT_SHADOWS[(u.n-1)%5];const passed=unitPassed(u.n);
@@ -575,11 +667,13 @@ function viewPractice(){const sh=shaky().length,learned=Object.keys(P.cards).len
   $("#view").innerHTML=`<section class="card"><h2>Practice</h2><p class="muted">Practice adds XP and keeps words fresh. It never changes your path.</p>
     <button class="btn" id="pShaky" ${learned<4?"disabled":""}>🧠 Shaky words${sh?` (${sh})`:""}</button>
     <button class="btn ghost" id="pListen" ${learned<4?"disabled":""}>🎧 Listening practice</button>
+    <button class="btn ghost" id="pSpeed" ${learned<8?"disabled":""}>⚡ Speed round · 60 s${P.best?.speed?` · best ${P.best.speed}`:""}</button>
+    <p class="muted" style="font-size:.85rem">Speed round: match as many pairs as you can in a minute. You only race your own best.</p>
     ${learned<4?`<p class="muted" style="font-size:.88rem">Finish your first station to unlock practice.</p>`:""}</section>
    <section class="card"><h3>Daily goal</h3><p class="muted">About 1 XP per correct answer, plus a bonus for finishing a lesson. 30 XP ≈ 10 minutes.</p>
     <div class="goalpick">${[[20,"Light · ~7 min"],[30,"Regular · ~10 min"],[50,"Keen · ~15 min"]].map(([g,l])=>`<button data-goal="${g}" aria-pressed="${P.goal===g}">${g} XP · ${l}</button>`).join("")}</div></section>
    <section class="card"><h3>Placement</h3><p class="muted">${P.placement?`Taken ${esc(P.placement.date)}. Retaking can skip more units; it never un-does progress.`:"Not taken yet."}</p><button class="btn ghost" id="pPlace">${P.placement?"Retake placement":"Take placement"}</button></section>`;
-  const a=$("#pShaky"),b=$("#pListen");a.onclick=()=>start(buildReview());b.onclick=()=>start(buildReview("listening"));$("#pPlace").onclick=()=>start(buildPlacement());
+  const a=$("#pShaky"),b=$("#pListen");a.onclick=()=>start(buildReview());b.onclick=()=>start(buildReview("listening"));$("#pPlace").onclick=()=>start(buildPlacement());$("#pSpeed").onclick=startSpeed;
   document.querySelectorAll("[data-goal]").forEach(x=>x.onclick=()=>{P.goal=+x.dataset.goal;save();renderView()})}
 
 function viewProgress(){const L=levelInfo();const learned=Object.keys(P.cards).length,st=strong();const ws=weakestSkill();

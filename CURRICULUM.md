@@ -11,6 +11,9 @@ Design rules for every lesson
   Never invent a false similarity; if unsure, use a pronunciation or "false friend" tip instead.
 - Dialogues come from real Czech life: shops (Albert, Lidl, Billa), pubs, trams, pharmacy, neighbours,
   post office / Zásilkovna, kids' school or školka, the foreign police (OAMP), the doctor.
+- 2 `silly` sentences per lesson: grammatical, absurd, using known words plus the running cast
+  (pan Medvěd the bear, the cat kočka, Rohlík the bread roll). Gentle humour, never about the learner's family.
+- 1 `postcard`: a true, surprising Czech culture fact (check it) + a useful phrase.
 - Recycle 2–3 words the learner missed recently (from `progress/main.log[].missed`) inside new dialogues.
 - Every lesson sets `unit` (7 lessons per unit from Unit 4 on) and a 1–2 word `short` label for the path.
 

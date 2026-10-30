@@ -118,5 +118,24 @@
   "cz": "Kolik to stojí?",
   "en": "Point at anything and ask."
  },
- "short": "At the till"
+ "short": "At the till",
+ "silly": [
+  {
+   "cz": "Kolik stojí medvěd? Sto korun.",
+   "en": "How much is the bear? A hundred crowns.",
+   "emoji": "🐻💰"
+  },
+  {
+   "cz": "Taška, účtenka, medvěd. To je všechno.",
+   "en": "Bag, receipt, bear. That's all.",
+   "emoji": "🛍️🐻"
+  }
+ ],
+ "postcard": {
+  "emoji": "🪙",
+  "title": "The crown",
+  "text": "Czechia kept its own money: the koruna, which means crown. Cashiers often ask if you have small change.",
+  "cz": "Máte drobné?",
+  "en": "Do you have change?"
+ }
 }

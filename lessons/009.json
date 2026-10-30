@@ -97,5 +97,24 @@
   "cz": "___ korun",
   "en": "___ crowns. Try: dvacet, padesát, sto."
  },
- "short": "Prices"
+ "short": "Prices",
+ "silly": [
+  {
+   "cz": "Dvacet medvědů v tramvaji.",
+   "en": "Twenty bears on a tram.",
+   "emoji": "🐻🚋"
+  },
+  {
+   "cz": "Rohlík stojí sto korun?!",
+   "en": "A roll costs a hundred crowns?!",
+   "emoji": "🥖😱"
+  }
+ ],
+ "postcard": {
+  "emoji": "🥤",
+  "title": "Kofola",
+  "text": "Created in Czechoslovakia in 1960 as a home-grown cola. Still loved, and still on tap in many pubs.",
+  "cz": "Jednu Kofolu, prosím.",
+  "en": "One Kofola, please."
+ }
 }

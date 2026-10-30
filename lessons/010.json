@@ -95,5 +95,24 @@
   "cz": "Kde je ___?",
   "en": "Where is ___? záchod, metro, lékárna."
  },
- "short": "Directions"
+ "short": "Directions",
+ "silly": [
+  {
+   "cz": "Kde je medvěd? Tam, na záchodě!",
+   "en": "Where's the bear? There, in the toilet!",
+   "emoji": "🐻🚽"
+  },
+  {
+   "cz": "Kočka jde rovně, pak vlevo.",
+   "en": "The cat goes straight, then left.",
+   "emoji": "🐈⬆️⬅️"
+  }
+ ],
+ "postcard": {
+  "emoji": "👅",
+  "title": "No vowels needed",
+  "text": "Czech's most famous tongue-twister has no vowels at all. The r does the vowel's job.",
+  "cz": "Strč prst skrz krk.",
+  "en": "Stick a finger through your throat."
+ }
 }

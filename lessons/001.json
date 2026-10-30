@@ -120,5 +120,24 @@
   "cz": "Dobrý den. … Děkuji. Na shledanou.",
   "en": "The whole script for walking into and out of any Czech shop."
  },
- "short": "Sounds"
+ "short": "Sounds",
+ "silly": [
+  {
+   "cz": "Dobrý den, čaj. Na shledanou, čaj.",
+   "en": "Hello, tea. Goodbye, tea.",
+   "emoji": "🍵👋"
+  },
+  {
+   "cz": "Ahoj, čaj!",
+   "en": "Hi, tea!",
+   "emoji": "🙋🍵"
+  }
+ ],
+ "postcard": {
+  "emoji": "🪝",
+  "title": "The háček",
+  "text": "The little hook on č, š, ž is called a háček. It comes from a 15th-century spelling reform attributed to Jan Hus, and Slovak, Slovene, Croatian and Lithuanian borrowed it.",
+  "cz": "háček",
+  "en": "little hook"
+ }
 }

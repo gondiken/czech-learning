@@ -107,5 +107,24 @@
  "pattern": {
   "cz": "Nemám ___.",
   "en": "I don't have ___. čas, kartu, klíč."
+ },
+ "silly": [
+  {
+   "cz": "Nejsem medvěd. Jsem rohlík.",
+   "en": "I'm not a bear. I'm a roll.",
+   "emoji": "🙅🐻🥖"
+  },
+  {
+   "cz": "Kočka nemá čas. Má schůzku.",
+   "en": "The cat has no time. She has a meeting.",
+   "emoji": "🐈📅"
+  }
+ ],
+ "postcard": {
+  "emoji": "🎩",
+  "title": "Jára Cimrman",
+  "text": "The greatest Czech genius never existed. Fictional inventor Jára Cimrman nearly won a national TV poll of the greatest Czechs.",
+  "cz": "Jára Cimrman",
+  "en": "the genius who never lived"
  }
 }

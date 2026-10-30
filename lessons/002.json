@@ -94,5 +94,24 @@
   "cz": "Promiňte, mluvíte anglicky?",
   "en": "Your polite exit to English. Always start with Promiňte."
  },
- "short": "Survival"
+ "short": "Survival",
+ "silly": [
+  {
+   "cz": "Promiňte, čaj, mluvíte anglicky?",
+   "en": "Excuse me, tea, do you speak English?",
+   "emoji": "🍵🇬🇧"
+  },
+  {
+   "cz": "Ano. Ne. Trochu.",
+   "en": "Yes. No. A little.",
+   "emoji": "🤷"
+  }
+ ],
+ "postcard": {
+  "emoji": "🥾",
+  "title": "Ahoj on the trail",
+  "text": "Czechs say Ahoj for hello and goodbye. On mountain trails, hikers greet every stranger they pass.",
+  "cz": "Ahoj!",
+  "en": "Hi! / Bye!"
+ }
 }

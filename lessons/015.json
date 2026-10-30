@@ -123,5 +123,24 @@
  "pattern": {
   "cz": "Dám si ___.",
   "en": "I'll have ___. polévku, svíčkovou, pivo."
+ },
+ "silly": [
+  {
+   "cz": "Dám si svíčkovou a sedm knedlíků.",
+   "en": "I'll have the svíčková and seven dumplings.",
+   "emoji": "🥩🥟"
+  },
+  {
+   "cz": "Medvěd platí zvlášť.",
+   "en": "The bear pays separately.",
+   "emoji": "🐻🧾"
+  }
+ ],
+ "postcard": {
+  "emoji": "🐟",
+  "title": "Carp in the bathtub",
+  "text": "Before Christmas, many families buy a live carp and keep it in the bathtub for a few days before the Christmas dinner.",
+  "cz": "kapr",
+  "en": "carp"
  }
 }

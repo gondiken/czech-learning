@@ -121,5 +121,24 @@
  "pattern": {
   "cz": "Jdu domů. / Jsem doma.",
   "en": "I'm going home. / I'm at home."
+ },
+ "silly": [
+  {
+   "cz": "V sobotu jde medvěd na trh.",
+   "en": "On Saturday the bear goes to the market.",
+   "emoji": "🐻🧺"
+  },
+  {
+   "cz": "Kočka je doma, medvěd jde domů.",
+   "en": "The cat is at home, the bear is going home.",
+   "emoji": "🐈🏠🐻"
+  }
+ ],
+ "postcard": {
+  "emoji": "🏰",
+  "title": "Castle country",
+  "text": "Czechia has around 2,000 castles and chateaux, one of the densest collections in the world.",
+  "cz": "hrad",
+  "en": "castle"
  }
 }

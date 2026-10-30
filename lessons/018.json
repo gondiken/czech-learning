@@ -107,5 +107,24 @@
  "pattern": {
   "cz": "Dneska je ___, co?",
   "en": "It's ___ today, isn't it? zima, teplo, hezky."
+ },
+ "silly": [
+  {
+   "cz": "Prší pivo!",
+   "en": "It's raining beer!",
+   "emoji": "🌧️🍺"
+  },
+  {
+   "cz": "Medvěd má deštník, kočka nemá.",
+   "en": "The bear has an umbrella, the cat doesn't.",
+   "emoji": "🐻☂️🐈"
+  }
+ ],
+ "postcard": {
+  "emoji": "🌧️",
+  "title": "Weather sayings",
+  "text": "Czechs love weather proverbs. If it rains on St Medard's day (8 June), expect forty days of rain.",
+  "cz": "Medardova kápě, čtyřicet dní kape.",
+  "en": "Medard's rain, forty days of dripping."
  }
 }

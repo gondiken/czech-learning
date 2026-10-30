@@ -116,5 +116,24 @@
   "cz": "Dvě / tři / čtyři piva",
   "en": "2–4 take 'piva'. From 5 on: pět piv. Don't worry, you'll be understood either way."
  },
- "short": "1 – 10"
+ "short": "1 – 10",
+ "silly": [
+  {
+   "cz": "Sedm koček pije pivo.",
+   "en": "Seven cats are drinking beer.",
+   "emoji": "🐈🐈🐈🍺"
+  },
+  {
+   "cz": "Tři medvědi a jedno kafe.",
+   "en": "Three bears and one coffee.",
+   "emoji": "🐻🐻🐻☕"
+  }
+ ],
+ "postcard": {
+  "emoji": "🕰️",
+  "title": "The Orloj",
+  "text": "Prague's astronomical clock has been running since 1410. It's the oldest astronomical clock still working.",
+  "cz": "orloj",
+  "en": "astronomical clock"
+ }
 }
