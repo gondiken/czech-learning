@@ -5,15 +5,25 @@ A 10-minute-a-day Czech course for a Turkish speaker living in Czechia.
 - **App (phone):** https://claude.ai/artifact/49jET6PDeyUZhUw95zHbxX
 - **Daily coach:** a scheduled Claude task that runs every day, prepares the next lesson and sends a phone notification.
 
-## How a day works (≈10 min)
+## How it works
 
-| Step | Time | What happens |
-|---|---|---|
-| Warm-up review | 2 min | Flashcards of earlier words that are due (spaced repetition: 1, 3, 7, 14, 30, 60 days) |
-| Sounds & tricks | 2 min | One "Turkish bridge": a Czech sound or grammar idea mapped onto Turkish |
-| New words | 3 min | 6–10 picture cards with Czech audio, English and Turkish |
-| Real scene | 2 min | A short dialogue from daily life in Czechia, played aloud |
-| Quick check | 1–2 min | 5 questions: listen, pick the word, pick the picture |
+- **Placement test** (first open): 5 questions per unit, starting from Unit 1. ≥ 80% tests you out of the unit
+  (its lessons are marked done and its words go into the review deck). Retake any time from Practice.
+- **Path**: units → stations (lessons) → a checkpoint test (15 questions, 80% to pass). Passing raises your level.
+- **A lesson** (~10 min): warm-up on fading words → Turkish bridge → new words (teach card + exercise) →
+  match pairs → real scene (dialogue) → sentence exercises → typing. Wrong answers come back at the end.
+- **Exercise types**: pick picture, pick meaning, pick Czech, listen & pick, listen & type, write in Czech
+  (accent-tolerant, with an accent keyboard), match pairs, build Czech from tiles, translate with tiles,
+  tap what you hear, fill the gap.
+- **XP & goal**: 1 XP per first-try correct answer, +10 per lesson, +20 per passed checkpoint. Goal 20/30/50 XP a day.
+  Reaching it ends the day ("Done for today"); extra practice is optional. No hearts, no leagues.
+- **Streak**: days with the goal met; one missed day per 7 is a rest day (☾) and doesn't break it.
+- **Memory model**: half-life regression (simplified). Each word has a half-life `h` in days; recall = 2^(-days/h).
+  Right answers grow `h` (more for typing/production), wrong answers halve it. Strong = `h` ≥ 7 days.
+- **Adapting**: each word climbs exercise stages (recognise → recall → type); the weakest skill gets more exercises;
+  a session under 70% or 15+ fading words turns the next session into a "Strengthen day"; the coach's `plan/today`
+  can set mode, focus skill/words and new-word cap.
+- **Level**: Unit n passed = Level n, labelled with its CEFR band (Pre-A1 → A1.2 → A2). An estimate, not an exam.
 
 ## Where things live
 
@@ -27,14 +37,17 @@ A 10-minute-a-day Czech course for a Turkish speaker living in Czechia.
 | Path | Written by | Contents |
 |---|---|---|
 | `lessons/NNN` | coach | one lesson (schema below) |
-| `progress/main` | app | `done{n:{date,score,of}}`, `days[]`, `cards{cz:{box,due,n}}`, `log[]` (incl. missed words) |
-| `notes/today` | coach | `{date, text}` shown as "Your coach" on top of the app |
+| `units/N` | coach | `{n, title, cefr, can, lessons[]}` |
+| `progress/main` | app | `v:2`, `goal`, `placement`, `done{n}`, `units{n:{passed,score}}`, `cards{cz:{h,last,stage,seen,right,wrong}}`, `days{date:{xp,ex,right,min,sk{skill:[right,total]}}}`, `skill{skill:[last 50 bools]}`, `history{date:{learned,strong,xp}}`, `lastSession` |
+| `answers/<date>-<time>` | app | one finished session: `{date, mode, lesson, unit, acc, xp, mins, items[{ex,skill,item,ok,first,ms}]}` |
+| `plan/today` | coach | today's plan (see `COACH.md`) |
+| `reports/latest` | coach | `{date, text}` shown on the Progress tab |
 
 Lesson schema:
 
 ```json
 {
-  "n": 15, "title": "…", "line": "A|B|C", "why": "one sentence",
+  "n": 15, "unit": 4, "short": "Tab label", "title": "…", "why": "one sentence",
   "bridge": {"title": "…", "rows": [{"cz":"…","tr":"…","ex":"…","note":"…"}], "note": "…"},
   "words": [{"cz":"…","en":"…","tr":"…","emoji":"…","say":"optional pronunciation"}],
   "dialog": [{"who":"Ty|<role in Czech>","cz":"…","en":"…"}],

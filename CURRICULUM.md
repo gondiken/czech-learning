@@ -12,7 +12,7 @@ Design rules for every lesson
 - Dialogues come from real Czech life: shops (Albert, Lidl, Billa), pubs, trams, pharmacy, neighbours,
   post office / Zásilkovna, kids' school or školka, the foreign police (OAMP), the doctor.
 - Recycle 2–3 words the learner missed recently (from `progress/main.log[].missed`) inside new dialogues.
-- Line colours rotate like Prague metro lines: A (green), B (yellow), C (red), 6 lessons… roughly.
+- Every lesson sets `unit` (7 lessons per unit from Unit 4 on) and a 1–2 word `short` label for the path.
 
 Done: stations 1–21 (greetings, survival, café, numbers, till, groceries, intro + cases, family,
 big numbers, directions, transport, time words, pharmacy, small talk, restaurant, být/mít,
